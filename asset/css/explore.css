@@ -6,10 +6,6 @@
 
 body{
     flex-direction: column;
-    background-image: url('../images/pemandangan.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     height: 400px;
 }
 
@@ -125,8 +121,73 @@ nav {
     background-color: #0873ed;
 }
 
-.home {
+.explore-home {
     padding-top: 130px;
     text-align: center;
     color: #ffffff;
+    background-image: url('../images/explore-background.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
+.explore-destinations {
+    background: rgb(240, 237, 255);
+}
+
+.explore-destinations h2 {
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+
+.explore-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.explore-box {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.explore-item {
+    position: relative;
+    min-height: 500px;
+    max-width: none;
+    padding: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgb(236, 196, 149);
+    color: rgb(240, 237, 255);
+    border-radius: 1.5rem;
+    transition: 0.5s ease-in-out;
+}
+
+.explore-item img {
+    width: 100%;
+    border-radius: 20%;
+    border: 3px solid brown;
+    height: 200px;
+    object-fit: cover;
+}
+
+.explore-item:hover {
+    transform: translateY(-15px);
+}
+
+.explore-item h2 {
+    font-size: 2.8rem;
+    padding-top: 6.2rem;
+    color: white;
+    text-shadow: #b6bfca;
+}
+
+.explore-item p {
+    font-size: 1.6rem;
+    color: black;
+}   
