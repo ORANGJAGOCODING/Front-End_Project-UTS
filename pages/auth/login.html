@@ -4,21 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
+    <link rel="stylesheet" href="../../asset/css/login.css">
 </head>
-<body>
-    <h2> masuk akun</h2>
-    <div>
-        <label>email / username</label>
-        <input type="text" placeholder="contoh: hartonobudi123@gmail.com" required>
-    </div>
+<body class="halaman-login">
+    <div class="kontainer-logo">
+        <div>
+            <a class="warna-logo"> Tiket <span>ku</span></a>
+        </div>
+        <div class="kotak-login">
+            <form>
+                <div class="grup-form">
+                    <label>Email</label>
+                    <input type="email" placeholder="contoh: hartonobudi123@gmail.com" required>
+                </div>
 
-    <div>
-        <labe>Paswword</labe>
-        <input type="password" placeholder="********" required>
+                <div  class="grup-form">
+                    <labe>Paswword</labe>
+                    <input type="password" placeholder="********" required>
+                </div>
+            </form>
+        <button type="submit" class="tombol-masuk">Masuk</button>
+        <p >belum punya akun? <a href="daftar.html">daftar di sini</a></p>
+        
+        <p class="teks-bwh"> Dengan melanjutkan, kamu menyetujui <a href="#">Kebijakan Privasi</a> dan <a href="#">Syarat & Ketentuan</a> Tiketku. </p>
+        </div>
     </div>
-
-    <button type="submit">Masuk</button>
-    <p>belum punya akun? <a href="daftar.html">daftar di sini</a></p>
 
 </body>
 </html>
