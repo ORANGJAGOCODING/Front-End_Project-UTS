@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore</title>
+    <link rel="stylesheet" href="../../asset/css/style.css">
     <link rel="stylesheet" href="../../asset/css/explore.css">
-    
 </head>
 <body>
     <header class="header">
-        <a href="/index.html" class="warna-logo"> Tiket <span>ku</span></a>
-        <form id="searchForm" class="row g-2 mb-4">
-            <input type="text" id="Input" class="form-control" placeholder="Mau kemana mas?">
-        </form>
+        <div class="kontainer-logo">
+          <a href="../../index.html" class="warna-logo">Tiket<span>ku</span></a>
+        </div>
         <nav class="navbar">
-            <a href="#"><button id="Explore" class="explore">Explore</button></a>
-            <a href="/pages/auth/login.html"><button id="Login" class="login">Login</button></a>
-            <a href="/pages/auth/daftar.html"><button id="daftar" class="daftar">Daftar</button></a>
+            <a href="#" class="active">Explore</a>
+            <a href="/pages/tiket/dashboard.html">Tiket Pesawat</a>
+            <a href="/pages/booking/hotel.html">Hotel</a>
+            <a href="#">Jadwal</a>
+            <a href="#">Cek Pesanan</a>
+            <a href="#">Bantuan</a>
         </nav>
+        <div class="akun">
+            <a href="../auth/login.html" class="login">Masuk</a>
+            <a href="../auth/daftar.html" class="daftar">Daftar</a>
+        </div>
     </header>
     <section class="explore-home">
         <h1>Ayo lihat-lihat dulu destinasinya...</h1>

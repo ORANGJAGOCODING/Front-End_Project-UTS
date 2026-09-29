@@ -18,10 +18,10 @@ header {
 }
 
 section {
-    min-height: 100vh;
+    min-height: 70vh;
     padding: 10rem 10% 10rem;
 }
-
+/* 
 .warna-logo {
     font-size: 36px;
     font-weight: 800;
@@ -67,7 +67,7 @@ nav {
     gap: 8px;
 }
 
-.explore {
+.navbar-button-1 {
     width: 100%;
     padding: 13px;
     background-color: #0035f4;
@@ -81,7 +81,7 @@ nav {
     margin-top: 10px;
 }
 
-.explore:hover {
+.navbar-button-1:hover {
     background-color: #0873ed;
 }
 
@@ -119,7 +119,7 @@ nav {
 
 .daftar:hover {
     background-color: #0873ed;
-}
+} */
 
 .explore-home {
     padding-top: 130px;

@@ -13,20 +13,20 @@ body{
     height: 400px;
 }
 
-header {
+/* header {
     background-color: #ffffff;
     width:100%;
     position: fixed;
     display: flex;
     z-index: 1;
-}
+} */
 
 section {
     min-height: 100vh;
     padding: 10rem 10% 10rem;
 }
 
-.warna-logo {
+/*.warna-logo {
     font-size: 36px;
     font-weight: 800;
     color: #0064d2;
@@ -123,7 +123,7 @@ nav {
 
 .daftar:hover {
     background-color: #0873ed;
-}
+} */
 
 .home {
     padding-top: 130px;
