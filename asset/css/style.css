@@ -92,9 +92,9 @@ body {
 .login {
     width: 100%;
     padding: 8px 12px;
-    background-color: #ffffff;
+    background-color: #e4e3e3;
     color: #000000;
-    border: none;
+    border: 1px solid #efab0c;
     border-radius: 8px;
     font-size: 15px;
     font-weight: 700;
@@ -112,7 +112,7 @@ body {
     padding: 8px 12px;
     background-color: #385ee6;
     color: #ffffff;
-    border: none;
+    border: 1px solid #efab0c;
     border-radius: 8px;
     font-size: 15px;
     font-weight: 700;
@@ -123,4 +123,40 @@ body {
 
 .daftar:hover {
     background-color: #064d9e;
+}
+
+.footer {
+    position: relative;
+    padding: 1.5rem 4rem;
+    background-color: var(--second-bg-color);
+    background-color: #f8fafc;
+    border-top: 1px dashed #c8ced6;
+}
+
+.footer ul {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+.footer ul li a {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    transition: 0.5s ease-in-out;
+}
+
+.footer ul li a:hover {
+    color: var(--main-color);
+}
+
+.footer p {
+    position: relative;
+    z-index: 1;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    text-align: right;
 }

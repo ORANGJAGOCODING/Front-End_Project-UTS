@@ -963,14 +963,14 @@ body {
 }
 
 /* Footer */
-.site-footer {
+/* .site-footer {
   margin-top: 50px;
   padding-top: 20px;
   border-top: 1px solid #e2e8f0;
   text-align: center;
   color: #94a3b8;
   font-size: 13px;
-}
+} */
 
 /* Responsive */
 @media (max-width: 992px) {
