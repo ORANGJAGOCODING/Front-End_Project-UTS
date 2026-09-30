@@ -8,32 +8,29 @@
 </head>
 <body class="halaman-login">
     <div class="kontainer-logo">
-        <div>
+        <div class="">
             <a class="warna-logo"> Tiket <span>ku</span></a>
         </div>
         <div class="kotak-login">
-            <form>
+            <form id="formDaftar">
                 <div class="grup-form">
                     <label>Username</label>
-                    <input type="text" placeholder="contoh: hartonobudi123@gmail.com" required>
+                    <input type="text" id="username" placeholder="contoh: hartonobudi123@gmail.com" required>
                 </div>
-
                 <div class="grup-form">
                     <label>Email</label>
-                    <input type="email" placeholder="contoh: hartonobudi123@gmail.com" required>
+                    <input type="email" id="email" placeholder="contoh: hartonobudi123@gmail.com" required>
                 </div>
-
                 <div  class="grup-form">
-                    <labe>Paswword</labe>
-                    <input type="password" placeholder="********" required>
+                    <label>Password</label>
+                    <input type="password" id="password" placeholder="********" required>
                 </div>
+                <button type="submit" class="tombol-masuk">Daftar</button>
             </form>
-        <button type="submit" class="tombol-masuk">Masuk</button>
-        <p >sudah punya akun? <a href="login.html">masuk di sini</a></p>
-        
-        <p class="teks-bwh"> Dengan melanjutkan, kamu menyetujui <a href="#">Kebijakan Privasi</a> dan <a href="#">Syarat & Ketentuan</a> Tiketku. </p>
+            <p>sudah punya akun? <a href="login.html">masuk di sini</a></p>
+            <p class="teks-bwh">Dengan melanjutkan, kamu menyetujui <a href="../kebijakan/kebijakan_privasi.html">Kebijakan Privasi</a> dan <a href="../kebijakan/syarat_ketentuan.html">Syarat & Ketentuan</a> Tiketku.</p>
         </div>
     </div>
-
+    <script src="../../asset/js/daftar.js"></script>
 </body>
 </html>
