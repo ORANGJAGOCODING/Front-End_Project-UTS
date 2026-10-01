@@ -306,9 +306,7 @@
             <div class="price-tax">Termasuk pajak & biaya bandara</div>
           </div>
 
-          <button class="btn-book-ticket" type="button">
-            <span>Pilih Tiket</span>
-          </button>
+g
           <div class="ticket-extra-note">E-tiket langsung terbit</div>
         </div>
       </article>
@@ -408,9 +406,9 @@
             <div class="price-tax">Termasuk bagasi 30kg & pajak</div>
           </div>
 
-          <button class="btn-book-ticket" type="button">
+          <a class="btn-book-ticket" type="button" href="detail.html">
             <span>Pilih Tiket</span>
-          </button>
+          </a>
           <div class="ticket-extra-note">Maskapai Bintang 5</div>
         </div>
       </article>
@@ -511,9 +509,9 @@
             <div class="price-tax">Sudah termasuk pajak bandara</div>
           </div>
 
-          <button class="btn-book-ticket" type="button">
+          <a class="btn-book-ticket" type="button" href="detail.html">
             <span>Pilih Tiket</span>
-          </button>
+          </a >
           <div class="ticket-extra-note">Konfirmasi instan</div>
         </div>
       </article>
@@ -613,9 +611,9 @@
             <div class="price-tax">Sudah termasuk asuransi dasar</div>
           </div>
 
-          <button class="btn-book-ticket" type="button">
+          <a class="btn-book-ticket" type="button" href="detail.html">
             <span>Pilih Tiket</span>
-          </button>
+          </a>
           <div class="ticket-extra-note">Penerbangan sore</div>
         </div>
       </article>
@@ -714,16 +712,15 @@
             <div class="price-tax">Tarif dasar & biaya layanan</div>
           </div>
 
-          <button class="btn-book-ticket" type="button">
+          <a class="btn-book-ticket" type="button" href="detail.html">
             <span>Pilih Tiket</span>
-          </button>
+          </a>
           <div class="ticket-extra-note">Penerbangan malam</div>
         </div>
       </article>
 
     </div>
 
-    <!-- Informasi dan Ketentuan Perjalanan -->
     <section class="info-banner">
       <div class="info-title">
         <span>Ketentuan & Informasi Penting Perjalanan</span>
@@ -765,5 +762,13 @@
         <p>Call Center: +62 ### #### ####</p>
         <p>&copy; 2026 Tiketku. All Rights Reserved. Project UTS Front-End Programming.</p>
     </footer>
+
+    <script>
+      document.querySelectorAll('.btn-book-ticket').forEach(button => {
+        button.addEventListener('click', () => {
+          window.location.href = 'detail.html';
+        });
+      });
+    </script>
 </body>
 </html>
