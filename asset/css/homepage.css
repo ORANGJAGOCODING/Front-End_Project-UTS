@@ -4,148 +4,21 @@
     box-sizing: border-box;
 }
 
-body {
-    flex-direction: column;
-    background-image: url('../images/pemandangan.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 400px;
+h1 {
+    padding-top: 0px;
 }
-
-.profilDropdown {
-    display: none;
-    position: absolute;
-    right: 0;
-    top: 54px;
-    width: 300px;
-    background-color: #ffffff;
-    border-radius: 16px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-    padding: 12px;
-    z-index: 1000;
-}
-
-.profilDropdown.show {
-    display: block;
-}
-
-
-
-/* header {
-    background-color: #ffffff;
-    width:100%;
-    position: fixed;
-    display: flex;
-    z-index: 1;
-} */
 
 section {
     min-height: 100vh;
     padding: 10rem 10% 10rem;
 }
 
-/*.warna-logo {
-    font-size: 36px;
-    font-weight: 800;
-    color: #0064d2;
-    text-decoration: none;
-    letter-spacing: -1px;
-    padding: 10px;
-    transition: 0.5s ease-in-out;
-}
-
-.warna-logo:hover {
-    transform: translateY(5px);
-}
-
-.warna-logo span {
-    color: #efab0c;
-}
-
-form {
-    align-self: center;
-}
-
-form input {
-    width: 100%;
-    padding: 12px 14px;
-    border: 1px solid #ced4da;
-    border-radius: 8px;
-    font-size: 14px;
-    transition: all 0.2s ease;
-    box-sizing: border-box;
-}
-
-form input:focus {
-    outline: none;
-    border-color: #0064d2;
-    box-shadow: 0 0 0 3px rgba(0, 100, 210, 0.15);
-}
-
-nav {
-    display:flex;
-    margin-left: auto;
-    padding: 10px;
-    gap: 8px;
-}
-
-.explore {
-    width: 100%;
-    padding: 13px;
-    background-color: #0035f4;
-    color: #ffffff;
-    border: none;
-    border-radius: 8px;
-    font-size: 15px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-    margin-top: 10px;
-}
-
-.explore:hover {
-    background-color: #0873ed;
-}
-
-.login {
-    width: 100%;
-    padding: 13px;
-    background-color: #ffffff;
-    color: #000000;
-    border: none;
-    border-radius: 8px;
-    font-size: 15px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-    margin-top: 10px;
-}
-
-.login:hover {
-    background-color: #b6bfca;
-}
-
-.daftar {
-    width: 100%;
-    padding: 13px;
-    background-color: #0035f4;
-    color: #ffffff;
-    border: none;
-    border-radius: 8px;
-    font-size: 15px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-    margin-top: 10px;
-}
-
-.daftar:hover {
-    background-color: #0873ed;
-} */
-
 .home {
-    padding-top: 130px;
+    flex-direction: column;
+    background-image: url('../images/pemandangan.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     text-align: center;
     color: #ffffff;
 }
