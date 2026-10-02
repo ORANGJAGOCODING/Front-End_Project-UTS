@@ -184,25 +184,24 @@ body {
 
 .footer {
     position: relative;
-    padding: 1.5rem 4rem;
-    background-color: var(--second-bg-color);
+    padding: 1.2rem 4rem;
     background-color: #f8fafc;
     border-top: 1px dashed #c8ced6;
 }
 
 .footer ul {
-    position: relative;
-    z-index: 1;
     display: flex;
     flex-wrap: wrap;
-    gap: 3rem;
-    margin-top: 2rem;
-    margin-bottom: 5rem;
+    gap: 2rem;
+    list-style: none;
+    margin: 0 0 1.5rem 0;
+    padding: 0;
 }
 
 .footer ul li a {
-    font-size: 1.4rem;
+    font-size: 1rem;
     color: var(--text-color);
+    text-decoration: none;
     transition: 0.5s ease-in-out;
 }
 
@@ -210,10 +209,14 @@ body {
     color: var(--main-color);
 }
 
+.footer .warna-logo {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
 .footer p {
-    position: relative;
-    z-index: 1;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--text-color);
     text-align: right;
+    margin: 0.2rem 0;
 }
