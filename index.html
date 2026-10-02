@@ -6,7 +6,6 @@
     <title>Homepage</title>
     <link rel="stylesheet" href="asset/css/style.css">
     <link rel="stylesheet" href="asset/css/homepage.css">
-    
 </head>
 <body>
     <header class="header">
@@ -27,13 +26,6 @@
             <div class="profilDropdown" id="profilDropdown">
                 <ul class="menu-list">
                     <li><a href="#wishlist">Wishlist</a></li>
-                    <li><a href="#orders">Your Orders</a></li>
-                    <li><a href="#passengers">Simpan Data Penumpang</a></li>
-                    <li><a href="#vouchers">Voucher Box</a></li>
-                    <li><a href="#payment">Metode Pembayaran</a></li>
-                    <li><a href="#refunds">Daftar Refund</a></li>
-                    <li><a href="#reviews">My Review</a></li>
-                    <li><a href="#claim">Claim Center</a></li>
                     <li><a href="#" id="logout" class="logout">Keluar (Logout)</a></li>
                 </ul>
             </div>
@@ -44,23 +36,62 @@
     <div>
         <section class="home">
             <h1>Hai kamu, mau ke mana?</h1>
-            <h2>tiket ku - Satu aplikasi untuk kebutuhan liburanmu.</h2>
+            <h2>Tiketku - <i>Satu aplikasi untuk kebutuhan liburanmu.</i></h2>
+            <br>
+            <h3><i>Cek promo menarik dibawah ini &#33;&#33;</i></h3>
         </section>
         <section class="promo">
             <h1>Promo untuk pengguna baru!!</h1>
-            <h5>klaim sekarang juga!</h5>
-            <div class="promoCard">
-                <div class="cards">
-                    diskon 1
+            <h4>klaim sekarang juga!</h4>
+            <div class="promo-cards">
+                <div class="promo-items">
+                    <h3>[Pengguna Baru] Diskon + Cashback hingga Rp2.000.000 untuk semua produk Tiketku</h3>
+                    <div class="claim-promo">
+                        <span id="kode1">TIKETKU2026</span>
+                        <button onclick="salinKode('kode1', this)">Salin</button>
+                    </div>
                 </div>
-                <div class="cards">
-                    diskon 2
+                <div class="promo-items">
+                    <h3>[Pengguna Baru] Diskon 20% dengan minimal pembelian IDR 3.000.000</h3>
+                    <div class="claim-promo">
+                        <span id="kode2">SAYAUNTAR</span>
+                        <button onclick="salinKode('kode2', this)">Salin</button>
+                    </div>
                 </div>
-                <div class="cards">
-                    diskon 3
+                <div class="promo-items">
+                    <h3>Tiket PayLater - Diskon + Cashback hingga IDR 4.000.000 untuk produk pilihan di Tiketku</h3>
+                    <div class="claim-promo">
+                        <span id="kode3">PIKACHU</span>
+                        <button onclick="salinKode('kode3', this)">Salin</button>
+                    </div>
                 </div>
-                <div class="cards">
-                    diskon 4
+                <div class="promo-items">
+                    <h3>Kredivo - Diskon + Cashback IDR 80.000 untuk produk pilihan di Tiketku</h3>
+                    <div class="claim-promo">
+                        <span id="kode4">HARTBDLUCKY</span>
+                        <button onclick="salinKode('kode4', this)">Salin</button>
+                    </div>
+                </div>
+                <div class="promo-items">
+                    <h3>OVO - Diskon hingga IDR 100.000 untuk produk pilihan di Tiketku</h3>
+                    <div class="claim-promo">
+                        <span id="kode4">HOTELMEWAH</span>
+                        <button onclick="salinKode('kode4', this)">Salin</button>
+                    </div>
+                </div>
+                <div class="promo-items">
+                    <h3>[Pengguna Baru] Diskon 10% tanpa minimal pembayaran</h3>
+                    <div class="claim-promo">
+                        <span id="kode4">HOTELMEWAH</span>
+                        <button onclick="salinKode('kode4', this)">Salin</button>
+                    </div>
+                </div>
+                <div class="promo-items">
+                    <h3>[Pengguna Baru] Cashback IDR 100.000 untuk minimal pembayaran IDR 5.000.000</h3>
+                    <div class="claim-promo">
+                        <span id="kode4">TIKETMEWAH</span>
+                        <button onclick="salinKode('kode4', this)">Salin</button>
+                    </div>
                 </div>
             </div>
         </section>
