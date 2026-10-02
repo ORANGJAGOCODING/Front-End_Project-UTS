@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jambuluwuk Mansion Pakubuwono - Tiketku</title>
+    <link rel="stylesheet" href="../../asset/css/style.css">
+    <link rel="stylesheet" href="../../asset/css/detailhotel.css">
+</head>
+<body>
+    <header class="header">
+      <div class="kontainer-logo">
+        <a href="../../index.html" class="warna-logo">Tiket<span>ku</span></a>
+      </div>
+      <nav class="navbar">
+        <a href="../paket/explore.html">Paket</a>
+        <a href="../tiket/dashboard.html">Tiket Pesawat</a>
+        <a href="hotel.html" class="active">Hotel</a>
+        <a href="#">Jadwal</a>
+        <a href="../history/history.html">Cek Pesanan</a>
+        <a href="../favorite/favorite.html">Favorite</a>
+        <a href="#">Bantuan</a>
+      </nav>
+      <div class="akun">
+        <a href="../inbox/notifikasi.html" class="inbox" id="inbox">&#9993;</a>
+        <button class="profil" id="profil" aria-label="Menu">&#128100;</button>
+        <div class="profilDropdown" id="profilDropdown">
+          <ul class="menu-list">
+            <li><a href="#wishlist">Wishlist</a></li>
+            <li><a href="#orders">Your Orders</a></li>
+            <li><a href="#passengers">Simpan Data Penumpang</a></li>
+            <li><a href="#vouchers">Voucher Box</a></li>
+            <li><a href="#payment">Metode Pembayaran</a></li>
+            <li><a href="#refunds">Daftar Refund</a></li>
+            <li><a href="#reviews">My Review</a></li>
+           <li><a href="#claim">Claim Center</a></li>
+           <li><a href="#" id="logout" class="logout">Keluar (Logout)</a></li>
+        </ul>
+      </div>
+        <a href="../auth/login.html" class="login" id="login">Masuk</a>
+        <a href="../auth/daftar.html" class="daftar" id="daftar">Daftar</a>
+      </div>
+    </header>
+
+    <main class="page-wrapper">
+      <section class="gallery-container">
+        <div class="gallery-main">
+          <img src="../../asset/hotel/2.png">
+        </div>
+        <div class="gallery-subgrid">
+        <div class="gallery-item">
+          <img src="../../asset/hotel/1.png">
+        </div>
+        <div class="gallery-item">
+          <img src="../../asset/hotel/3.png">
+        </div>
+        <div class="gallery-item">
+          <img src="../../asset/hotel/4.png">
+        </div>
+        <div class="gallery-item">
+          <img src="../../asset/hotel/5.png">
+        </div>
+        </div>
+       </section>
+
+      <section class="hotel-main-header" id="infoUmum">
+        <div class="hotel-headline-left">
+          <div class="hotel-type-badge">
+            <span>Hotel Bintang 4</span>
+          </div>
+
+        <h1 class="hotel-headline-title">Jambuluwuk Mansion Pakubuwono</h1>
+
+        <div class="hotel-headline-rating">
+          <span class="rating-score">4.7/5</span>
+          <span>(67 ulasan)</span>
+          <span>•</span>
+          <span style="color: #0284c7; font-weight: 500;">Gelora, Jakarta Pusat, DKI Jakarta</span>
+        </div>
+
+        <div class="hotel-specs-strip">
+          <span class="spec-pill">1 Kamar Queen</span>
+          <span class="spec-pill">2 Tamu</span>
+          <span class="spec-pill">32.0 m²</span>
+          <span class="spec-pill">WiFi Gratis</span>
+          <span class="spec-pill">AC Dingin</span>
+          <span class="spec-pill">Restoran</span>
+        </div>
+      </div>
+      <aside class="hotel-price-card">
+        <div class="price-top-meta">
+          <span class="flash-sale-badge">07:24:29</span>
+          <span class="discount-pill">Diskon 36%</span>
+        </div>
+        <div class="price-calculation">
+          <span class="old-price">Mulai dari IDR 350.000</span>
+          <div class="main-price-val">
+            <span id="totalPriceDisplay">IDR 222.250</span><span>/kamar/malam</span>
+          </div>
+          <span class="price-tax-note">Termasuk pajak & seluruh biaya layanan</span>
+        </div>
+
+        <label style="display: flex; align-items: center; gap: 8px; font-size: 12px; color: #475569; margin-top: 4px; cursor: pointer;">
+          <input type="checkbox" id="addonBreakfast" style="width: 15px; height: 15px; accent-color: #0284c7; cursor: pointer;">
+          <span>Tambah Sarapan Buffet (+IDR 150.000)</span>
+        </label>
+        <button type="button" class="btn-select-room" id="btnProceedPayment">
+          Pesan Sekarang
+        </button>
+      </aside>
+    </section>
+
+    <section class="highlights-section" id="serunya">
+      <h2 class="section-title">Serunya Nginep di Sini</h2>
+      <div class="highlights-grid">
+        <div class="highlight-card">
+          <h4>Suasana Tenang</h4>
+          <p>Lingkungan tenang dan privat di kawasan elit Pakubuwono</p>
+        </div>
+        <div class="highlight-card">
+          <h4>Wifi kencang</h4>
+          <p>Koneksi internet tanpa batas gratis untuk streaming</p>
+        </div>
+        <div class="highlight-card">
+          <h4>Restoran & Kafe</h4>
+          <p>Sajian menu kuliner nusantara favorit yang enak</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="policy-section" id="kebijakan">
+      <h2 class="section-title">Kebijakan Akomodasi</h2>
+      <div class="policy-grid">
+        <div class="policy-item">
+          <h4>Waktu Check-in & Check-out</h4>
+          <p>Check-in dimulai pukul <strong>14:00</strong> WIB dan check-out maksimal pukul <strong>12:00</strong> WIB.</p>
+        </div>
+        <div class="policy-item">
+          <h4>Kebijakan Pembatalan</h4>
+          <p>Pembatalan gratis hingga 24 jam sebelum tanggal kedatangan.</p>
+        </div>
+        <div class="policy-item">
+          <h4>Dokumen & Deposit</h4>
+          <p>Wajib menunjukkan KTP/Paspor resmi saat proses check-in.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal-backdrop" id="checkoutModal" aria-hidden="true" role="dialog">
+      <div class="modal-box">
+        <div class="modal-icon-success">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        </div>
+
+        <h3 class="modal-title">Konfirmasi Detail & Harga Hotel</h3>
+        <p class="modal-desc">Pastikan rincian hotel dan tanggal menginap anda sudah sesuai dengan apa yang anda inginkan</p>
+
+        <div class="modal-summary-box">
+          <div class="modal-summary-row">
+            <span style="color: #64748b;">Hotel:</span>
+            <strong>Jambuluwuk Mansion Pakubuwono</strong>
+          </div>
+          <div class="modal-summary-row">
+            <span style="color: #64748b;">Lokasi:</span>
+            <strong>Gelora, Jakarta Pusat</strong>
+          </div>
+          <div class="modal-summary-row">
+            <span style="color: #64748b;">Jadwal:</span>
+            <strong>20 Nov 2026 - 22 Nov 2026 (2 Malam)</strong>
+          </div>
+          <div class="modal-summary-row">
+            <span style="color: #64748b;">Tamu:</span>
+            <strong>2 Dewasa (1 Kamar)</strong>
+          </div>
+          <div class="modal-summary-row total">
+            <span style="color: #0f172a; font-weight: 700;">Total Biaya:</span>
+            <strong style="color: #070707; font-size: 16px;" id="modalTotalDisplay">IDR 222.250</strong>
+          </div>
+        </div>
+
+        <div class="modal-actions">
+          <button type="button" class="btn-modal-cancel" id="btnCloseModal">Kembali</button>
+          <button type="button" class="btn-modal-confirm" id="btnConfirmPay">Bayar Sekarang</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+    <footer class="footer">
+        <ul class="list">
+            <li><a href="../tiket/dashboard.html">Pesawat</a></li>
+            <li><a href="hotel.html">Hotel</a></li>
+            <li><a href="../kebijakan/kebijakan_privasi.html">Kebijakan Privasi</a></li>
+            <li><a href="../kebijakan/syarat_ketentuan.html">Syarat dan Ketentuan</a></li>
+        </ul>
+            <a href="../../index.html" class="warna-logo">Tiket<span>ku</span></a>
+            <p>Email: cs@tiketku.id</p>
+            <p>Call Center: +62 ### #### ####</p>
+            <p>&copy; 2026 Tiketku. All Rights Reserved. Project UTS Front-End Programming.</p>
+    </footer>
+
+        <script src="../../asset/js/app.js"></script>
+        <script src="../../asset/js/detailhotel.js"></script>
+    </body>
+</html>
