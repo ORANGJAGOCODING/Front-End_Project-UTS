@@ -1,615 +1,591 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Detail Penerbangan & Rincian Harga - Tiketku</title>
-  <link rel="stylesheet" href="../../asset/css/style.css">
-  <link rel="stylesheet" href="../../asset/css/detail.css">
-</head>
-<body>
-
-  <!-- Header Global (Seragam dengan Dashboard) -->
-  <header class="header">
-    <div class="kontainer-logo">
-      <a href="../../index.html" class="warna-logo">Tiket<span>ku</span></a>
-    </div>
-
-    <!-- Navigasi Bar -->
-    <nav class="navbar">
-      <a href="../paket/explore.html">Paket</a>
-      <a href="dashboard.html" class="active">Tiket Pesawat</a>
-      <a href="../booking/hotel.html">Hotel</a>
-      <a href="#">Jadwal</a>
-      <a href="../history/history.html">Cek Pesanan</a>
-      <a href="#">Bantuan</a>
-    </nav>
-    <div class="akun">
-            <a href="../inbox/notifikasi.html" class ="inbox" id="inbox">&#9993;</a>
-            <button class="profil" id="profil" aria-label="Menu">&#128100;</button>
-            <div class="profilDropdown" id="profilDropdown">
-                <ul class="menu-list">
-                    <li><a href="#wishlist">Wishlist</a></li>
-                    <li><a href="#orders">Your Orders</a></li>
-                    <li><a href="#passengers">Simpan Data Penumpang</a></li>
-                    <li><a href="#vouchers">Voucher Box</a></li>
-                    <li><a href="#payment">Metode Pembayaran</a></li>
-                    <li><a href="#refunds">Daftar Refund</a></li>
-                    <li><a href="#reviews">My Review</a></li>
-                    <li><a href="#claim">Claim Center</a></li>
-                    <li><a href="#" id="logout" class="logout">Keluar (Logout)</a></li>
-                </ul>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Detail Penerbangan & Rincian Harga - Tiketku</title>
+        <link rel="stylesheet" href="../../asset/css/style.css">
+        <link rel="stylesheet" href="../../asset/css/detail.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="kontainer-logo">
+                <a href="/index.html" class="warna-logo">Tiket<span>ku</span></a>
             </div>
-            <a href="../auth/login.html" class="login" id="login">Masuk</a>
-            <a href="../auth/daftar.html" class="daftar" id="daftar">Daftar</a>
-        </div>
-  </header>
 
-  <main class="page-wrapper">
+            <nav class="navbar">
+                <a href="/pages/explore/explore.html">Explore</a>
+                <a href="/pages/tiket/dashboard.html" class="active">Tiket Pesawat</a>
+                <a href="/pages/booking/hotel.html">Hotel</a>
+                <a href="#">Jadwal</a>
+                <a href="#">Cek Pesanan</a>
+                <a href="#">Bantuan</a>
+            </nav>
 
-    <nav class="booking-stepper" aria-label="Alur Pemesanan">
-      <a href="dashboard.html" class="step-item completed clickable" title="Kembali ke Pencarian Tiket">
-        <div class="step-circle">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="20 6 9 17 4 12"></polyline>
-          </svg>
-        </div>
-        <div class="step-info">
-          <span class="step-number">Langkah 1</span>
-          <span class="step-title">Pilih Tiket</span>
-        </div>
-      </a>
-
-      <div class="step-divider completed"></div>
-
-      <div class="step-item active">
-        <div class="step-circle">2</div>
-        <div class="step-info">
-          <span class="step-number">Langkah 2</span>
-          <span class="step-title">Detail & Rincian Harga</span>
-        </div>
-      </div>
-
-      <div class="step-divider"></div>
-
-      <div class="step-item">
-        <div class="step-circle">3</div>
-        <div class="step-info">
-          <span class="step-number">Langkah 3</span>
-          <span class="step-title">Pembayaran</span>
-        </div>
-      </div>
-    </nav>
-
-    <section class="flight-summary-banner">
-      <div class="summary-route-group">
-        <div class="summary-route-title">
-          <span>Jakarta (CGK)</span>
-          <span class="summary-route-arrow">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M7 16V4M7 4L3 8M7 4L11 8M17 8V20M17 20L21 16M17 20L13 16"/>
-            </svg>
-          </span>
-          <span>Singapura (SIN)</span>
-        </div>
-        <div class="summary-badges">
-          <span class="summary-pill highlight">Pulang-Pergi (PP)</span>
-          <span class="summary-pill">Sen, 28 Sep 2026 - Kam, 01 Okt 2026</span>
-          <span class="summary-pill">1 Penumpang • Kelas Ekonomi Flexi</span>
-        </div>
-      </div>
-
-      <div>
-        <a href="dashboard.html" class="btn-change-flight">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="19" y1="12" x2="5" y2="12"></line>
-            <polyline points="12 19 5 12 12 5"></polyline>
-          </svg>
-          <span>Ubah Penerbangan</span>
-        </a>
-      </div>
-    </section>
-
-    <div class="detail-layout-grid">
-
-      <div class="detail-main-content">
-
-        <section class="flight-trip-section">
-          <div class="trip-section-header">
-            <div class="trip-title-wrapper">
-              <div class="trip-icon-badge departure">
-                <img src="../../asset/images/plane-takeoff.svg" alt="Terbang" width="20" height="20">
-              </div>
-              <div class="trip-header-text">
-                <h2>Penerbangan Berangkat</h2>
-                <p>Senin, 28 September 2026 • Durasi 1j 50m (Langsung)</p>
-              </div>
+            <div>
+                <a href="/pages/inbox/notifikasi.html" class="inbox">inbox</a>
             </div>
-            <span class="trip-badge-pill departure">Pergi</span>
-          </div>
 
-          <article class="card-ticket" data-airline="garuda">
-            <div class="content-ticket">
-              <div class="airline-header">
-                <div class="airline-info">
-                  <div class="airline-code-badge garuda">GA</div>
-                  <div class="airline-text">
-                    <div class="airline-name">Garuda Indonesia</div>
-                    <div class="flight-code">GA-820 • Boeing 737-800 • Full Service</div>
-                  </div>
-                </div>
-                <div class="ticket-date-badge">
-                  <span>Tanggal: <strong>Senin, 28 Sep 2026</strong></span>
-                </div>
-              </div>
+            <div class="akun">
+                <a href="../auth/login.html" class="login">Masuk</a>
+                <a href="../auth/daftar.html" class="daftar">Daftar</a>
+            </div>
+        </header>
 
-              <div class="content-data">
-                <div class="destination">
-                  <div class="dest origin">
-                    <div class="hour">08:00 <span class="timezone">WIB</span></div>
-                    <div class="acronym">CGK</div>
-                    <div class="country">Jakarta</div>
-                    <div class="airport-detail">Soekarno-Hatta (T3)</div>
-                    <span class="flight-date-tag">28 Sep 2026</span>
-                  </div>
-
-                  <div class="flight-duration-center">
-                    <span class="duration-text">1j 50m</span>
-                    <div class="flight-line-track">
-                      <span class="flight-line-dot start"></span>
-                      <div class="flight-plane-icon">
-                        <img src="../../asset/images/plane-track.svg" alt="Pesawat" width="16" height="16">
-                      </div>
-                      <span class="flight-line-dot end"></span>
+        <main class="page-wrapper">
+            <nav class="booking-stepper" aria-label="Alur Pemesanan">
+                <a href="/pages/tiket/dashboard.html" class="step-item completed clickable" title="Kembali ke Pencarian Tiket">
+                    <div class="step-circle">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
                     </div>
-                    <span class="flight-type-badge">Langsung</span>
-                  </div>
-
-                  <div class="dest destination-point">
-                    <div class="hour">10:50 <span class="timezone">SGT</span></div>
-                    <div class="acronym">SIN</div>
-                    <div class="country">Singapura</div>
-                    <div class="airport-detail">Changi Airport (T3)</div>
-                    <span class="flight-date-tag">28 Sep 2026</span>
-                  </div>
-                </div>
-
-                <div class="data-flex">
-                  <div class="data">
-                    <div class="title">Penumpang</div>
-                    <div class="subtitle">1 Dewasa</div>
-                  </div>
-                  <div class="data">
-                    <div class="title">No. Kursi</div>
-                    <div class="subtitle">14A (Window)</div>
-                  </div>
-                  <div class="data">
-                    <div class="title">Kelas</div>
-                    <div class="subtitle">Ekonomi Flexi</div>
-                  </div>
-                  <div class="data">
-                    <div class="title">Bagasi</div>
-                    <div class="subtitle">20 Kg + Kabin 7 Kg</div>
-                  </div>
-                </div>
-
-                <div class="facilities-badges">
-                  <span class="badge-item"> Bagasi 20 kg</span>
-                  <span class="badge-item"> Makanan Termasuk</span>
-                  <span class="badge-item"> Port USB & Hiburan</span>
-                  <span class="badge-item"> Reschedule Fleksibel</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="separator">
-              <div class="span-lines"></div>
-            </div>
-
-            <div class="ticket-stub">
-              <div class="stub-status-pill">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                <span>Terpilih</span>
-              </div>
-
-              <div class="stub-price-info">
-                <div class="stub-price-label">Tarif Penerbangan</div>
-                <div class="stub-price-value">Rp 1.485.000</div>
-                <div class="stub-price-tax">Sudah termasuk pajak & bandara</div>
-              </div>
-
-              <button class="btn-ticket-policy" type="button" onclick="alert('Kebijakan Tiket: Tiket dapat di-reschedule hingga 24 jam sebelum keberangkatan.')">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <line x1="12" y1="16" x2="12" y2="12"></line>
-                  <line x1="12" y1="8" x2="12.01" y2="8"></line>
-                </svg>
-                <span>Info Kebijakan</span>
-              </button>
-            </div>
-          </article>
-        </section>
-
-        <section class="flight-trip-section">
-          <div class="trip-section-header">
-            <div class="trip-title-wrapper">
-              <div class="trip-icon-badge return">
-                <img src="../../asset/images/plane-landing.svg" alt="Mendarat" width="20" height="20">
-              </div>
-              <div class="trip-header-text">
-                <h2>Penerbangan Pulang</h2>
-                <p>Kamis, 01 Oktober 2026 • Durasi 1j 50m (Langsung)</p>
-              </div>
-            </div>
-            <span class="trip-badge-pill return">Pulang</span>
-          </div>
-
-          <article class="card-ticket" data-airline="garuda">
-            <div class="content-ticket">
-              <div class="airline-header">
-                <div class="airline-info">
-                  <div class="airline-code-badge garuda">GA</div>
-                  <div class="airline-text">
-                    <div class="airline-name">Garuda Indonesia</div>
-                    <div class="flight-code">GA-821 • Boeing 737-800 • Full Service</div>
-                  </div>
-                </div>
-                <div class="ticket-date-badge">
-                  <span>Tanggal: <strong>Kamis, 01 Okt 2026</strong></span>
-                </div>
-              </div>
-
-              <div class="content-data">
-                <div class="destination">
-                  <div class="dest origin">
-                    <div class="hour">12:20 <span class="timezone">SGT</span></div>
-                    <div class="acronym">SIN</div>
-                    <div class="country">Singapura</div>
-                    <div class="airport-detail">Changi Airport (T3)</div>
-                    <span class="flight-date-tag">01 Okt 2026</span>
-                  </div>
-
-                  <div class="flight-duration-center">
-                    <span class="duration-text">1j 50m</span>
-                    <div class="flight-line-track">
-                      <span class="flight-line-dot start"></span>
-                      <div class="flight-plane-icon">
-                        <img src="../../asset/images/plane-track.svg" alt="Pesawat" width="16" height="16">
-                      </div>
-                      <span class="flight-line-dot end"></span>
+                    <div class="step-info">
+                        <span class="step-number">Langkah 1</span>
+                        <span class="step-title">Pilih Tiket</span>
                     </div>
-                    <span class="flight-type-badge">Langsung</span>
-                  </div>
+                </a>
 
-                  <div class="dest destination-point">
-                    <div class="hour">13:10 <span class="timezone">WIB</span></div>
-                    <div class="acronym">CGK</div>
-                    <div class="country">Jakarta</div>
-                    <div class="airport-detail">Soekarno-Hatta (T3)</div>
-                    <span class="flight-date-tag">01 Okt 2026</span>
-                  </div>
+                <div class="step-divider completed"></div>
+
+                <div class="step-item active">
+                    <div class="step-circle">2</div>
+                    <div class="step-info">
+                        <span class="step-number">Langkah 2</span>
+                        <span class="step-title">Detail & Rincian Harga</span>
+                    </div>
                 </div>
 
-                <div class="data-flex">
-                  <div class="data">
-                    <div class="title">Penumpang</div>
-                    <div class="subtitle">1 Dewasa</div>
-                  </div>
-                  <div class="data">
-                    <div class="title">No. Kursi</div>
-                    <div class="subtitle">15F (Window)</div>
-                  </div>
-                  <div class="data">
-                    <div class="title">Kelas</div>
-                    <div class="subtitle">Ekonomi Flexi</div>
-                  </div>
-                  <div class="data">
-                    <div class="title">Bagasi</div>
-                    <div class="subtitle">20 Kg + Kabin 7 Kg</div>
-                  </div>
+                <div class="step-divider"></div>
+
+                <div class="step-item">
+                    <div class="step-circle">3</div>
+                    <div class="step-info">
+                        <span class="step-number">Langkah 3</span>
+                        <span class="step-title">Pembayaran</span>
+                    </div>
+                </div>
+            </nav>
+
+            <section class="flight-summary-banner">
+                <div class="summary-route-group">
+                    <div class="summary-route-title">
+                        <span>Jakarta (CGK)</span>
+                        <span class="summary-route-arrow">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M7 16V4M7 4L3 8M7 4L11 8M17 8V20M17 20L21 16M17 20L13 16"/>
+                            </svg>
+                        </span>
+                        <span>Singapura (SIN)</span>
+                    </div>
+                    <div class="summary-badges">
+                        <span class="summary-pill highlight">Pulang-Pergi (PP)</span>
+                        <span class="summary-pill">Sen, 28 Sep 2026 - Kam, 01 Okt 2026</span>
+                        <span class="summary-pill">1 Penumpang • Kelas Ekonomi Flexi</span>
+                    </div>
                 </div>
 
-                <div class="facilities-badges">
-                  <span class="badge-item"> Bagasi 20 kg</span>
-                  <span class="badge-item"> Makanan Termasuk</span>
-                  <span class="badge-item"> Port USB & Hiburan</span>
-                  <span class="badge-item"> Reschedule Fleksibel</span>
+                <div>
+                    <a href="/pages/tiket/dashboard.html" class="btn-change-flight">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="19" y1="12" x2="5" y2="12"></line>
+                            <polyline points="12 19 5 12 12 5"></polyline>
+                        </svg>
+                        <span>Ubah Penerbangan</span>
+                    </a>
                 </div>
-              </div>
-            </div>
+            </section>
 
-            <div class="separator">
-              <div class="span-lines"></div>
-            </div>
+            <div class="detail-layout-grid">
+                <div class="detail-main-content">
+                    <section class="flight-trip-section">
+                        <div class="trip-section-header">
+                            <div class="trip-title-wrapper">
+                                <div class="trip-icon-badge departure">
+                                    <img src="../../asset/images/plane-takeoff.svg" alt="Terbang" width="20" height="20">
+                                </div>
+                                <div class="trip-header-text">
+                                    <h2>Penerbangan Berangkat</h2>
+                                    <p>Senin, 28 September 2026 • Durasi 1j 50m (Langsung)</p>
+                                </div>
+                            </div>
+                            <span class="trip-badge-pill departure">Pergi</span>
+                        </div>
 
-            <div class="ticket-stub">
-              <div class="stub-status-pill">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                <span>Terpilih</span>
-              </div>
+                        <article class="card-ticket" data-airline="garuda">
+                            <div class="content-ticket">
+                                <div class="airline-header">
+                                    <div class="airline-info">
+                                        <div class="airline-code-badge garuda">GA</div>
+                                        <div class="airline-text">
+                                            <div class="airline-name">Garuda Indonesia</div>
+                                            <div class="flight-code">GA-820 • Boeing 737-800 • Full Service</div>
+                                        </div>
+                                    </div>
+                                    <div class="ticket-date-badge">
+                                        <span>Tanggal: <strong>Senin, 28 Sep 2026</strong></span>
+                                    </div>
+                                </div>
 
-              <div class="stub-price-info">
-                <div class="stub-price-label">Tarif Penerbangan</div>
-                <div class="stub-price-value">Rp 1.485.000</div>
-                <div class="stub-price-tax">Sudah termasuk pajak & bandara</div>
-              </div>
+                                <div class="content-data">
+                                    <div class="destination">
+                                        <div class="dest origin">
+                                            <div class="hour">08:00 <span class="timezone">WIB</span></div>
+                                            <div class="acronym">CGK</div>
+                                            <div class="country">Jakarta</div>
+                                            <div class="airport-detail">Soekarno-Hatta (T3)</div>
+                                            <span class="flight-date-tag">28 Sep 2026</span>
+                                        </div>
 
-              <button class="btn-ticket-policy" type="button" onclick="alert('Kebijakan Tiket: Tiket dapat di-reschedule hingga 24 jam sebelum keberangkatan.')">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <line x1="12" y1="16" x2="12" y2="12"></line>
-                  <line x1="12" y1="8" x2="12.01" y2="8"></line>
-                </svg>
-                <span>Info Kebijakan</span>
-              </button>
-            </div>
-          </article>
-        </section>
+                                        <div class="flight-duration-center">
+                                            <span class="duration-text">1j 50m</span>
+                                            <div class="flight-line-track">
+                                                <span class="flight-line-dot start"></span>
+                                                <div class="flight-plane-icon">
+                                                    <img src="../../asset/images/plane-track.svg" alt="Pesawat" width="16" height="16">
+                                                </div>
+                                                <span class="flight-line-dot end"></span>
+                                            </div>
+                                            <span class="flight-type-badge">Langsung</span>
+                                        </div>
 
-        <section class="passenger-info-card">
-          <div class="card-inner-header">
-            <div class="card-inner-title">
-              <img src="../../asset/images/user-profile.svg" alt="Profil" width="20" height="20">
-              <span>Data Pemesan & Penumpang</span>
-            </div>
-            <span style="font-size: 12px; font-weight: 700; color: #0284c7; cursor: pointer;">Ubah Data</span>
-          </div>
+                                        <div class="dest destination-point">
+                                            <div class="hour">10:50 <span class="timezone">SGT</span></div>
+                                            <div class="acronym">SIN</div>
+                                            <div class="country">Singapura</div>
+                                            <div class="airport-detail">Changi Airport (T3)</div>
+                                            <span class="flight-date-tag">28 Sep 2026</span>
+                                        </div>
+                                    </div>
 
-          <div class="passenger-data-grid">
-            <div class="passenger-data-box">
-              <span class="data-label">Nama Pemesan</span>
-              <span class="data-val">Budi Santoso (Tuan)</span>
-            </div>
-            <div class="passenger-data-box">
-              <span class="data-label">Email Konfirmasi</span>
-              <span class="data-val">budi.santoso@email.com</span>
-            </div>
-            <div class="passenger-data-box">
-              <span class="data-label">Nomor Telepon</span>
-              <span class="data-val">+62 812-3456-7890</span>
-            </div>
-            <div class="passenger-data-box">
-              <span class="data-label">Nomor Paspor / KTP</span>
-              <span class="data-val">A12984920 (WNI)</span>
-            </div>
-          </div>
-        </section>
+                                    <div class="data-flex">
+                                        <div class="data">
+                                            <div class="title">Penumpang</div>
+                                            <div class="subtitle">1 Dewasa</div>
+                                        </div>
+                                        <div class="data">
+                                            <div class="title">No. Kursi</div>
+                                            <div class="subtitle">14A (Window)</div>
+                                        </div>
+                                        <div class="data">
+                                            <div class="title">Kelas</div>
+                                            <div class="subtitle">Ekonomi Flexi</div>
+                                        </div>
+                                        <div class="data">
+                                            <div class="title">Bagasi</div>
+                                            <div class="subtitle">20 Kg + Kabin 7 Kg</div>
+                                        </div>
+                                    </div>
 
-        <section class="addons-card">
-          <div class="card-inner-header">
-            <div class="card-inner-title">
-              <img src="../../asset/images/shield-protect.svg" alt="Proteksi" width="20" height="20">
-              <span>Proteksi & Layanan Tambahan</span>
-            </div>
-            <span style="font-size: 12px; color: #64748b;">Opsional</span>
-          </div>
+                                    <div class="facilities-badges">
+                                        <span class="badge-item">Bagasi 20 kg</span>
+                                        <span class="badge-item">Makanan Termasuk</span>
+                                        <span class="badge-item">Port USB & Hiburan</span>
+                                        <span class="badge-item">Reschedule Fleksibel</span>
+                                    </div>
+                                </div>
+                            </div>
 
-          <div class="addons-list">
-            <label class="addon-item" for="addonInsurance">
-              <div class="addon-left">
-                <input type="checkbox" id="addonInsurance" class="addon-checkbox">
-                <div class="addon-content">
-                  <h4>Asuransi Perjalanan Komprehensif</h4>
-                  <p>Kompensasi pembatalan darurat, biaya medis luar negeri hingga Rp 100 jt, & bagasi hilang.</p>
+                            <div class="separator">
+                                <div class="span-lines"></div>
+                            </div>
+
+                            <div class="ticket-stub">
+                                <div class="stub-status-pill">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    <span>Terpilih</span>
+                                </div>
+
+                                <div class="stub-price-info">
+                                    <div class="stub-price-label">Tarif Penerbangan</div>
+                                    <div class="stub-price-value">Rp 1.485.000</div>
+                                    <div class="stub-price-tax">Sudah termasuk pajak & bandara</div>
+                                </div>
+
+                                <button class="btn-ticket-policy" type="button" onclick="alert('Kebijakan Tiket: Tiket dapat di-reschedule hingga 24 jam sebelum keberangkatan.')">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <line x1="12" y1="16" x2="12" y2="12"></line>
+                                        <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                                    </svg>
+                                    <span>Info Kebijakan</span>
+                                </button>
+                            </div>
+                        </article>
+                    </section>
+
+                    <section class="flight-trip-section">
+                        <div class="trip-section-header">
+                            <div class="trip-title-wrapper">
+                                <div class="trip-icon-badge return">
+                                    <img src="../../asset/images/plane-landing.svg" alt="Mendarat" width="20" height="20">
+                                </div>
+                                <div class="trip-header-text">
+                                    <h2>Penerbangan Pulang</h2>
+                                    <p>Kamis, 01 Oktober 2026 • Durasi 1j 50m (Langsung)</p>
+                                </div>
+                            </div>
+                            <span class="trip-badge-pill return">Pulang</span>
+                        </div>
+
+                        <article class="card-ticket" data-airline="garuda">
+                            <div class="content-ticket">
+                                <div class="airline-header">
+                                    <div class="airline-info">
+                                        <div class="airline-code-badge garuda">GA</div>
+                                        <div class="airline-text">
+                                            <div class="airline-name">Garuda Indonesia</div>
+                                            <div class="flight-code">GA-821 • Boeing 737-800 • Full Service</div>
+                                        </div>
+                                    </div>
+                                    <div class="ticket-date-badge">
+                                        <span>Tanggal: <strong>Kamis, 01 Okt 2026</strong></span>
+                                    </div>
+                                </div>
+
+                                <div class="content-data">
+                                    <div class="destination">
+                                        <div class="dest origin">
+                                            <div class="hour">12:20 <span class="timezone">SGT</span></div>
+                                            <div class="acronym">SIN</div>
+                                            <div class="country">Singapura</div>
+                                            <div class="airport-detail">Changi Airport (T3)</div>
+                                            <span class="flight-date-tag">01 Okt 2026</span>
+                                        </div>
+
+                                        <div class="flight-duration-center">
+                                            <span class="duration-text">1j 50m</span>
+                                            <div class="flight-line-track">
+                                                <span class="flight-line-dot start"></span>
+                                                <div class="flight-plane-icon">
+                                                    <img src="../../asset/images/plane-track.svg" alt="Pesawat" width="16" height="16">
+                                                </div>
+                                                <span class="flight-line-dot end"></span>
+                                            </div>
+                                            <span class="flight-type-badge">Langsung</span>
+                                        </div>
+
+                                        <div class="dest destination-point">
+                                            <div class="hour">13:10 <span class="timezone">WIB</span></div>
+                                            <div class="acronym">CGK</div>
+                                            <div class="country">Jakarta</div>
+                                            <div class="airport-detail">Soekarno-Hatta (T3)</div>
+                                            <span class="flight-date-tag">01 Okt 2026</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="data-flex">
+                                        <div class="data">
+                                            <div class="title">Penumpang</div>
+                                            <div class="subtitle">1 Dewasa</div>
+                                        </div>
+                                        <div class="data">
+                                            <div class="title">No. Kursi</div>
+                                            <div class="subtitle">15F (Window)</div>
+                                        </div>
+                                        <div class="data">
+                                            <div class="title">Kelas</div>
+                                            <div class="subtitle">Ekonomi Flexi</div>
+                                        </div>
+                                        <div class="data">
+                                            <div class="title">Bagasi</div>
+                                            <div class="subtitle">20 Kg + Kabin 7 Kg</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="facilities-badges">
+                                        <span class="badge-item">Bagasi 20 kg</span>
+                                        <span class="badge-item">Makanan Termasuk</span>
+                                        <span class="badge-item">Port USB & Hiburan</span>
+                                        <span class="badge-item">Reschedule Fleksibel</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="separator">
+                                <div class="span-lines"></div>
+                            </div>
+
+                            <div class="ticket-stub">
+                                <div class="stub-status-pill">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    <span>Terpilih</span>
+                                </div>
+
+                                <div class="stub-price-info">
+                                    <div class="stub-price-label">Tarif Penerbangan</div>
+                                    <div class="stub-price-value">Rp 1.485.000</div>
+                                    <div class="stub-price-tax">Sudah termasuk pajak & bandara</div>
+                                </div>
+
+                                <button class="btn-ticket-policy" type="button" onclick="alert('Kebijakan Tiket: Tiket dapat di-reschedule hingga 24 jam sebelum keberangkatan.')">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <line x1="12" y1="16" x2="12" y2="12"></line>
+                                        <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                                    </svg>
+                                    <span>Info Kebijakan</span>
+                                </button>
+                            </div>
+                        </article>
+                    </section>
+
+                    <section class="passenger-info-card">
+                        <div class="card-inner-header">
+                            <div class="card-inner-title">
+                                <img src="../../asset/images/user-profile.svg" alt="Profil" width="20" height="20">
+                                <span>Data Pemesan & Penumpang</span>
+                            </div>
+                            <span style="font-size: 12px; font-weight: 700; color: #0284c7; cursor: pointer;">Ubah Data</span>
+                        </div>
+
+                        <div class="passenger-data-grid">
+                            <div class="passenger-data-box">
+                                <span class="data-label">Nama Pemesan</span>
+                                <span class="data-val">Budi Santoso (Tuan)</span>
+                            </div>
+                            <div class="passenger-data-box">
+                                <span class="data-label">Email Konfirmasi</span>
+                                <span class="data-val">budi.santoso@email.com</span>
+                            </div>
+                            <div class="passenger-data-box">
+                                <span class="data-label">Nomor Telepon</span>
+                                <span class="data-val">+62 812-3456-7890</span>
+                            </div>
+                            <div class="passenger-data-box">
+                                <span class="data-label">Nomor Paspor / KTP</span>
+                                <span class="data-val">A12984920 (WNI)</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="addons-card">
+                        <div class="card-inner-header">
+                            <div class="card-inner-title">
+                                <img src="../../asset/images/shield-protect.svg" alt="Proteksi" width="20" height="20">
+                                <span>Proteksi & Layanan Tambahan</span>
+                            </div>
+                            <span style="font-size: 12px; color: #64748b;">Opsional</span>
+                        </div>
+
+                        <div class="addons-list">
+                            <label class="addon-item" for="addonInsurance">
+                                <div class="addon-left">
+                                    <input type="checkbox" id="addonInsurance" class="addon-checkbox">
+                                    <div class="addon-content">
+                                        <h4>Asuransi Perjalanan Komprehensif</h4>
+                                        <p>Kompensasi pembatalan darurat, biaya medis luar negeri hingga Rp 100 jt, & bagasi hilang.</p>
+                                    </div>
+                                </div>
+                                <div class="addon-price">+Rp 45.000</div>
+                            </label>
+
+                            <label class="addon-item" for="addonDelay">
+                                <div class="addon-left">
+                                    <input type="checkbox" id="addonDelay" class="addon-checkbox">
+                                    <div class="addon-content">
+                                        <h4>Jaminan Tepat Waktu (Delay Protection)</h4>
+                                        <p>Kompensasi langsung Rp 500.000 tunai jika penerbangan mengalami delay lebih dari 60 menit.</p>
+                                    </div>
+                                </div>
+                                <div class="addon-price">+Rp 25.000</div>
+                            </label>
+                        </div>
+                    </section>
+
+                    <section class="info-banner">
+                        <div class="info-title">
+                            <span>Ketentuan & Informasi Penting Perjalanan</span>
+                        </div>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <h4>Masa Berlaku Paspor</h4>
+                                <p>Untuk rute internasional Singapura, pastikan masa berlaku paspor minimal 6 bulan sebelum tanggal kepulangan.</p>
+                            </div>
+                            <div class="info-item">
+                                <h4>Waktu Check-In</h4>
+                                <p>Konter bandara dibuka 2-3 jam sebelum keberangkatan dan ditutup 45-60 menit sebelum jadwal terbang.</p>
+                            </div>
+                            <div class="info-item">
+                                <h4>Ketentuan Bagasi Kabin</h4>
+                                <p>Setiap penumpang diperbolehkan membawa 1 koper kabin (maksimal 7 kg) serta 1 tas kecil pribadi.</p>
+                            </div>
+                            <div class="info-item">
+                                <h4>Penerbitan E-Tiket</h4>
+                                <p>E-tiket resmi diterbitkan otomatis setelah proses konfirmasi pembayaran dan dapat ditunjukkan melalui ponsel.</p>
+                            </div>
+                        </div>
+                    </section>
                 </div>
-              </div>
-              <div class="addon-price">+Rp 45.000</div>
-            </label>
 
-            <label class="addon-item" for="addonDelay">
-              <div class="addon-left">
-                <input type="checkbox" id="addonDelay" class="addon-checkbox">
-                <div class="addon-content">
-                  <h4>Jaminan Tepat Waktu (Delay Protection)</h4>
-                  <p>Kompensasi langsung Rp 500.000 tunai jika penerbangan mengalami delay lebih dari 60 menit.</p>
+                <aside class="detail-sidebar">
+                    <div class="price-path-card">
+                        <div class="price-path-header">
+                            <div class="price-path-title">
+                                <img src="../../asset/images/receipt.svg" alt="Rincian" width="18" height="18">
+                                <span>Rincian Harga (Path Harga)</span>
+                            </div>
+                            <span style="font-size: 11px; font-weight: 700; background: #e0f2fe; color: #0369a1; padding: 2px 8px; border-radius: 6px;">IDR</span>
+                        </div>
+
+                        <div class="price-path-body">
+                            <div class="price-route-summary">
+                                <span class="route-tags">CGK ⇄ SIN (PP)</span>
+                                <span class="passenger-tag">1 Penumpang (Dewasa)</span>
+                            </div>
+
+                            <div class="price-breakdown-list">
+                                <div class="price-row">
+                                    <span class="row-label">
+                                        <span>Tiket Pergi (GA-820)</span>
+                                    </span>
+                                    <span class="row-val" id="priceDeparture">Rp 1.485.000</span>
+                                </div>
+
+                                <div class="price-row">
+                                    <span class="row-label">
+                                        <span>Tiket Pulang (GA-821)</span>
+                                    </span>
+                                    <span class="row-val" id="priceReturn">Rp 1.485.000</span>
+                                </div>
+
+                                <div class="price-row">
+                                    <span class="row-label">
+                                        <span>Pajak Bandara (PSC) & PPN</span>
+                                    </span>
+                                    <span class="row-val free">Termasuk</span>
+                                </div>
+
+                                <div class="price-row">
+                                    <span class="row-label">
+                                        <span>Biaya Layanan Sistem</span>
+                                    </span>
+                                    <span class="row-val" id="priceSystemFee">Rp 25.000</span>
+                                </div>
+
+                                <div class="price-row" id="rowInsurance" style="display: none;">
+                                    <span class="row-label">
+                                        <span>Asuransi Komprehensif</span>
+                                    </span>
+                                    <span class="row-val" id="priceInsurance">Rp 0</span>
+                                </div>
+
+                                <div class="price-row" id="rowDelayProtection" style="display: none;">
+                                    <span class="row-label">
+                                        <span>Jaminan Tepat Waktu</span>
+                                    </span>
+                                    <span class="row-val" id="priceDelayProtection">Rp 0</span>
+                                </div>
+
+                                <div class="price-row" id="rowDiscount" style="display: none;">
+                                    <span class="row-label" style="color: #e11d48; font-weight: 600;">
+                                        <span>Diskon Promo</span>
+                                    </span>
+                                    <span class="row-val discount" id="priceDiscount">- Rp 0</span>
+                                </div>
+                            </div>
+
+                            <div class="promo-box">
+                                <div class="promo-form">
+                                    <input type="text" id="promoInput" class="promo-input" placeholder="KODE PROMO (MISAL: TIKETHEMAT)" aria-label="Kode Promo">
+                                    <button type="button" id="btnApplyPromo" class="btn-apply-promo">Terapkan</button>
+                                </div>
+                                <div id="promoMessage" class="promo-message"></div>
+                            </div>
+
+                            <div class="price-divider"></div>
+
+                            <div class="total-payment-box">
+                                <div>
+                                    <div class="total-label">Total Pembayaran</div>
+                                    <div class="total-sublabel">Termasuk seluruh pajak & biaya</div>
+                                </div>
+                                <div class="total-amount" id="totalPriceDisplay">Rp 2.995.000</div>
+                            </div>
+
+                            <button type="button" class="btn-proceed-payment" id="btnProceedPayment">
+                                <span>Lanjutkan ke Pembayaran</span>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="price-trust-notes">
+                            <div class="trust-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                </svg>
+                                <span>Transaksi Aman & Terenkripsi 256-bit SSL</span>
+                            </div>
+                            <div class="trust-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>E-Tiket Resmi Langsung Terbit ke Email</span>
+                            </div>
+                            <div class="trust-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 14 14"></polyline>
+                                </svg>
+                                <span>Layanan Bantuan Pelanggan 24/7</span>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+            <div class="modal-backdrop" id="checkoutModal">
+                <div class="modal-box">
+                    <div class="modal-icon-success">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="modal-title">Konfirmasi Detail & Harga</h3>
+                    <p class="modal-desc">Pastikan rute dan data penumpang Anda sudah sesuai sebelum melanjutkan ke gerbang pembayaran resmi.</p>
+                    <div class="modal-summary-box">
+                        <div style="display: flex; justify-content: space-between;">
+                            <span style="color: #64748b;">Rute:</span>
+                            <strong>Jakarta (CGK) ⇄ Singapura (SIN)</strong>
+                        </div>
+                        <div style="display: flex; justify-content: space-between;">
+                            <span style="color: #64748b;">Penumpang:</span>
+                            <strong>1 Dewasa (Budi Santoso)</strong>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; border-top: 1px dashed #e2e8f0; padding-top: 8px;">
+                            <span style="color: #0f172a; font-weight: 700;">Total Biaya:</span>
+                            <strong style="color: #0064d2; font-size: 16px;" id="modalTotalDisplay">Rp 2.995.000</strong>
+                        </div>
+                    </div>
+                    <div class="modal-actions">
+                        <button type="button" class="btn-modal-cancel" id="btnCloseModal">Kembali</button>
+                        <button type="button" class="btn-modal-confirm" id="btnConfirmPay">Bayar Sekarang</button>
+                    </div>
                 </div>
-              </div>
-              <div class="addon-price">+Rp 25.000</div>
-            </label>
-          </div>
-        </section>
-
-        <section class="info-banner">
-          <div class="info-title">
-            <span>Ketentuan & Informasi Penting Perjalanan</span>
-          </div>
-          <div class="info-grid">
-            <div class="info-item">
-              <h4>Masa Berlaku Paspor</h4>
-              <p>Untuk rute internasional Singapura, pastikan masa berlaku paspor minimal 6 bulan sebelum tanggal kepulangan.</p>
             </div>
-            <div class="info-item">
-              <h4>Waktu Check-In</h4>
-              <p>Konter bandara dibuka 2-3 jam sebelum keberangkatan dan ditutup 45-60 menit sebelum jadwal terbang.</p>
-            </div>
-            <div class="info-item">
-              <h4>Ketentuan Bagasi Kabin</h4>
-              <p>Setiap penumpang diperbolehkan membawa 1 koper kabin (maksimal 7 kg) serta 1 tas kecil pribadi.</p>
-            </div>
-            <div class="info-item">
-              <h4>Penerbitan E-Tiket</h4>
-              <p>E-tiket resmi diterbitkan otomatis setelah proses konfirmasi pembayaran dan dapat ditunjukkan melalui ponsel.</p>
-            </div>
-          </div>
-        </section>
+        </main>
 
-      </div>
+        <footer class="footer">
+            <ul class="list">
+                <li><a href="/pages/tiket/dashboard.html">Pesawat</a></li>
+                <li><a href="/pages/booking/hotel.html">Hotel</a></li>
+                <li><a href="/pages/kebijakan/kebijakan_privasi.html">Kebijakan Privasi</a></li>
+                <li><a href="/pages/kebijakan/syarat_ketentuan.html">Syarat dan Ketentuan</a></li>
+            </ul>
+            <a href="../../index.html" class="warna-logo">Tiket<span>ku</span></a>
+            <p>Email: cs@tiketku.id</p>
+            <p>Call Center: +62 ### #### ####</p>
+            <p>&copy; 2026 Tiketku. All Rights Reserved. Project UTS Front-End Programming.</p>
+        </footer>
 
-      <aside class="detail-sidebar">
-
-        <div class="price-path-card">
-          <div class="price-path-header">
-            <div class="price-path-title">
-              <img src="../../asset/images/receipt.svg" alt="Rincian" width="18" height="18">
-              <span>Rincian Harga (Path Harga)</span>
-            </div>
-            <span style="font-size: 11px; font-weight: 700; background: #e0f2fe; color: #0369a1; padding: 2px 8px; border-radius: 6px;">IDR</span>
-          </div>
-
-          <div class="price-path-body">
-            <div class="price-route-summary">
-              <span class="route-tags">CGK ⇄ SIN (PP)</span>
-              <span class="passenger-tag">1 Penumpang (Dewasa)</span>
-            </div>
-
-            <div class="price-breakdown-list">
-              <div class="price-row">
-                <span class="row-label">
-                  <span>Tiket Pergi (GA-820)</span>
-                </span>
-                <span class="row-val" id="priceDeparture">Rp 1.485.000</span>
-              </div>
-
-              <div class="price-row">
-                <span class="row-label">
-                  <span>Tiket Pulang (GA-821)</span>
-                </span>
-                <span class="row-val" id="priceReturn">Rp 1.485.000</span>
-              </div>
-
-              <div class="price-row">
-                <span class="row-label">
-                  <span>Pajak Bandara (PSC) & PPN</span>
-                </span>
-                <span class="row-val free">Termasuk</span>
-              </div>
-
-              <div class="price-row">
-                <span class="row-label">
-                  <span>Biaya Layanan Sistem</span>
-                </span>
-                <span class="row-val" id="priceSystemFee">Rp 25.000</span>
-              </div>
-
-              <div class="price-row" id="rowInsurance" style="display: none;">
-                <span class="row-label">
-                  <span>Asuransi Komprehensif</span>
-                </span>
-                <span class="row-val" id="priceInsurance">Rp 0</span>
-              </div>
-
-              <div class="price-row" id="rowDelayProtection" style="display: none;">
-                <span class="row-label">
-                  <span>Jaminan Tepat Waktu</span>
-                </span>
-                <span class="row-val" id="priceDelayProtection">Rp 0</span>
-              </div>
-
-              <div class="price-row" id="rowDiscount" style="display: none;">
-                <span class="row-label" style="color: #e11d48; font-weight: 600;">
-                  <span>Diskon Promo</span>
-                </span>
-                <span class="row-val discount" id="priceDiscount">- Rp 0</span>
-              </div>
-            </div>
-
-            <div class="promo-box">
-              <div class="promo-form">
-                <input type="text" id="promoInput" class="promo-input" placeholder="KODE PROMO (MISAL: TIKETHEMAT)" aria-label="Kode Promo">
-                <button type="button" id="btnApplyPromo" class="btn-apply-promo">Terapkan</button>
-              </div>
-              <div id="promoMessage" class="promo-message"></div>
-            </div>
-
-            <div class="price-divider"></div>
-
-            <div class="total-payment-box">
-              <div>
-                <div class="total-label">Total Pembayaran</div>
-                <div class="total-sublabel">Termasuk seluruh pajak & biaya</div>
-              </div>
-              <div class="total-amount" id="totalPriceDisplay">Rp 2.995.000</div>
-            </div>
-
-            <button type="button" class="btn-proceed-payment" id="btnProceedPayment">
-              <span>Lanjutkan ke Pembayaran</span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
-              </svg>
-            </button>
-          </div>
-
-          <div class="price-trust-notes">
-            <div class="trust-item">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-              </svg>
-              <span>Transaksi Aman & Terenkripsi 256-bit SSL</span>
-            </div>
-            <div class="trust-item">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="20 6 9 17 4 12"></polyline>
-              </svg>
-              <span>E-Tiket Resmi Langsung Terbit ke Email</span>
-            </div>
-            <div class="trust-item">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10"></circle>
-                <polyline points="12 6 12 12 14 14"></polyline>
-              </svg>
-              <span>Layanan Bantuan Pelanggan 24/7</span>
-            </div>
-          </div>
-
-        </div>
-
-      </aside>
-
-    </div>
-
-\    <div class="modal-backdrop" id="checkoutModal">
-      <div class="modal-box">
-        <div class="modal-icon-success">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="20 6 9 17 4 12"></polyline>
-          </svg>
-        </div>
-        <h3 class="modal-title">Konfirmasi Detail & Harga</h3>
-        <p class="modal-desc">Pastikan rute dan data penumpang Anda sudah sesuai sebelum melanjutkan ke gerbang pembayaran resmi.</p>
-
-        <div class="modal-summary-box">
-          <div style="display: flex; justify-content: space-between;">
-            <span style="color: #64748b;">Rute:</span>
-            <strong>Jakarta (CGK) ⇄ Singapura (SIN)</strong>
-          </div>
-          <div style="display: flex; justify-content: space-between;">
-            <span style="color: #64748b;">Penumpang:</span>
-            <strong>1 Dewasa (Budi Santoso)</strong>
-          </div>
-          <div style="display: flex; justify-content: space-between; border-top: 1px dashed #e2e8f0; padding-top: 8px;">
-            <span style="color: #0f172a; font-weight: 700;">Total Biaya:</span>
-            <strong style="color: #0064d2; font-size: 16px;" id="modalTotalDisplay">Rp 2.995.000</strong>
-          </div>
-        </div>
-
-        <div class="modal-actions">
-          <button type="button" class="btn-modal-cancel" id="btnCloseModal">Kembali</button>
-          <button type="button" class="btn-modal-confirm" id="btnConfirmPay">Bayar Sekarang</button>
-        </div>
-      </div>
-    </div>
-
-  </main>
-
- <footer class="footer">
-        <ul class="list">
-            <li><a href="../tiket/dashboard.html">Pesawat</a></li>
-            <li><a href="../booking/hotel.html">Hotel</a></li>
-            <li><a href="../kebijakan/kebijakan_privasi.html">Kebijakan Privasi</a></li>
-            <li><a href="../kebijakan/syarat_ketentuan.html">Syarat dan Ketentuan</a></li>
-        </ul>
-        <a href="../../index.html" class="warna-logo">Tiket<span>ku</span></a>
-        <p>Email: cs@tiketku.id</p>
-        <p>Call Center: +62 ### #### ####</p>
-        <p>&copy; 2026 Tiketku. All Rights Reserved. Project UTS Front-End Programming.</p>
-    </footer>
-    <script src="../../asset/js/app.js"></script>
-  <script src="../../asset/js/detail.js"></script>
-</body>
+        <script src="../../asset/js/detail.js"></script>
+    </body>
 </html>
