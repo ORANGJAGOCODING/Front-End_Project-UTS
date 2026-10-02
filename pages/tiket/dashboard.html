@@ -26,13 +26,25 @@
       <a href="#">Cek Pesanan</a>
       <a href="#">Bantuan</a>
     </nav>
-    <div>
-      <a href="/pages/inbox/notifikasi.html" class ="inbox">inbox</a>
-    </div>
     <div class="akun">
-      <a href="../auth/login.html" class="login">Masuk</a>
-      <a href="../auth/daftar.html" class="daftar">Daftar</a>
-    </div>
+            <a href="/pages/inbox/notifikasi.html" class ="inbox" id="inbox">&#9993;</a>
+            <button class="profil" id="profil" aria-label="Menu">&#128100;</button>
+            <div class="profilDropdown" id="profilDropdown">
+                <ul class="menu-list">
+                    <li><a href="#wishlist">Wishlist</a></li>
+                    <li><a href="#orders">Your Orders</a></li>
+                    <li><a href="#passengers">Simpan Data Penumpang</a></li>
+                    <li><a href="#vouchers">Voucher Box</a></li>
+                    <li><a href="#payment">Metode Pembayaran</a></li>
+                    <li><a href="#refunds">Daftar Refund</a></li>
+                    <li><a href="#reviews">My Review</a></li>
+                    <li><a href="#claim">Claim Center</a></li>
+                    <li><a href="#" id="logout" class="logout">Keluar (Logout)</a></li>
+                </ul>
+            </div>
+            <a href="/pages/auth/login.html" class="login" id="login">Masuk</a>
+            <a href="/pages/auth/daftar.html" class="daftar" id="daftar">Daftar</a>
+        </div>
   </header>
 
   <main class="page-wrapper">
@@ -306,9 +318,7 @@
             <div class="price-tax">Termasuk pajak & biaya bandara</div>
           </div>
 
-          <button class="btn-book-ticket" type="button">
-            <span>Pilih Tiket</span>
-          </button>
+g
           <div class="ticket-extra-note">E-tiket langsung terbit</div>
         </div>
       </article>
@@ -408,9 +418,9 @@
             <div class="price-tax">Termasuk bagasi 30kg & pajak</div>
           </div>
 
-          <button class="btn-book-ticket" type="button">
+          <a class="btn-book-ticket" type="button" href="detail.html">
             <span>Pilih Tiket</span>
-          </button>
+          </a>
           <div class="ticket-extra-note">Maskapai Bintang 5</div>
         </div>
       </article>
@@ -511,9 +521,9 @@
             <div class="price-tax">Sudah termasuk pajak bandara</div>
           </div>
 
-          <button class="btn-book-ticket" type="button">
+          <a class="btn-book-ticket" type="button" href="detail.html">
             <span>Pilih Tiket</span>
-          </button>
+          </a >
           <div class="ticket-extra-note">Konfirmasi instan</div>
         </div>
       </article>
@@ -613,9 +623,9 @@
             <div class="price-tax">Sudah termasuk asuransi dasar</div>
           </div>
 
-          <button class="btn-book-ticket" type="button">
+          <a class="btn-book-ticket" type="button" href="detail.html">
             <span>Pilih Tiket</span>
-          </button>
+          </a>
           <div class="ticket-extra-note">Penerbangan sore</div>
         </div>
       </article>
@@ -714,16 +724,15 @@
             <div class="price-tax">Tarif dasar & biaya layanan</div>
           </div>
 
-          <button class="btn-book-ticket" type="button">
+          <a class="btn-book-ticket" type="button" href="detail.html">
             <span>Pilih Tiket</span>
-          </button>
+          </a>
           <div class="ticket-extra-note">Penerbangan malam</div>
         </div>
       </article>
 
     </div>
 
-    <!-- Informasi dan Ketentuan Perjalanan -->
     <section class="info-banner">
       <div class="info-title">
         <span>Ketentuan & Informasi Penting Perjalanan</span>
@@ -765,5 +774,13 @@
         <p>Call Center: +62 ### #### ####</p>
         <p>&copy; 2026 Tiketku. All Rights Reserved. Project UTS Front-End Programming.</p>
     </footer>
+
+    <script>
+      document.querySelectorAll('.btn-book-ticket').forEach(button => {
+        button.addEventListener('click', () => {
+          window.location.href = 'detail.html';
+        });
+      });
+    </script>
 </body>
 </html>

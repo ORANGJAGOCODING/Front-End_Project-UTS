@@ -89,6 +89,63 @@ body {
     text-decoration: none;
 }
 
+.akun .inbox {
+    display: none;
+    width: 50px;
+    height: 50px;
+    padding: 8px 12px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: black;
+    border-radius: 50%;
+    border: 1px solid #000000;
+    background-color: #98abf0;
+}
+
+.profil {
+    display: none;
+    width: 50px;
+    height: 50px;
+    padding: 8px 12px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid #000000;
+    background-color: #d6c292;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.inbox.show,
+.profil.show {
+    display: flex;
+}
+
+.login.hide,
+.daftar.hide {
+    display: none;
+}
+
+.profilDropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 54px;
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    padding: 12px;
+    z-index: 1000;
+}
+
+.profilDropdown.show {
+    display: block;
+}
+
 .login {
     width: 100%;
     padding: 8px 12px;
