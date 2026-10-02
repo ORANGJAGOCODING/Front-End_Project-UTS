@@ -19,15 +19,15 @@
 
     <!-- navigasi bar -->
     <nav class="navbar">
-      <a href="/pages/explore/explore.html">Explore</a>
+      <a href="../paket/explore.html">Paket</a>
       <a href="#" class="active">Tiket Pesawat</a>
-      <a href="/pages/booking/hotel.html">Hotel</a>
+      <a href="../booking/hotel.html">Hotel</a>
       <a href="#">Jadwal</a>
-      <a href="#">Cek Pesanan</a>
+      <a href="../history/history.html">Cek Pesanan</a>
       <a href="#">Bantuan</a>
     </nav>
     <div class="akun">
-            <a href="/pages/inbox/notifikasi.html" class ="inbox" id="inbox">&#9993;</a>
+            <a href="../inbox/notifikasi.html" class ="inbox" id="inbox">&#9993;</a>
             <button class="profil" id="profil" aria-label="Menu">&#128100;</button>
             <div class="profilDropdown" id="profilDropdown">
                 <ul class="menu-list">
@@ -42,8 +42,8 @@
                     <li><a href="#" id="logout" class="logout">Keluar (Logout)</a></li>
                 </ul>
             </div>
-            <a href="/pages/auth/login.html" class="login" id="login">Masuk</a>
-            <a href="/pages/auth/daftar.html" class="daftar" id="daftar">Daftar</a>
+            <a href="../auth/login.html" class="login" id="login">Masuk</a>
+            <a href="../auth/daftar.html" class="daftar" id="daftar">Daftar</a>
         </div>
   </header>
 
@@ -317,8 +317,9 @@
             </div>
             <div class="price-tax">Termasuk pajak & biaya bandara</div>
           </div>
-
-g
+          <a class="btn-book-ticket" type="button" href="detail.html">
+            <span>Pilih Tiket</span>
+          </a>
           <div class="ticket-extra-note">E-tiket langsung terbit</div>
         </div>
       </article>
@@ -762,12 +763,12 @@ g
     </section>
   </main>
 
-    <footer class="footer">
+ <footer class="footer">
         <ul class="list">
-            <li><a href="/pages/tiket/dashboard.html">Pesawat</a></li>
-            <li><a href="/pages/booking/hotel.html">Hotel</a></li>
-            <li><a href="/pages/kebijakan/kebijakan_privasi.html">Kebijakan Privasi</a></li>
-            <li><a href="/pages/kebijakan/syarat_ketentuan.html">Syarat dan Ketentuan</a></li>
+            <li><a href="../tiket/dashboard.html">Pesawat</a></li>
+            <li><a href="../booking/hotel.html">Hotel</a></li>
+            <li><a href="../kebijakan/kebijakan_privasi.html">Kebijakan Privasi</a></li>
+            <li><a href="../kebijakan/syarat_ketentuan.html">Syarat dan Ketentuan</a></li>
         </ul>
         <a href="../../index.html" class="warna-logo">Tiket<span>ku</span></a>
         <p>Email: cs@tiketku.id</p>
@@ -775,6 +776,7 @@ g
         <p>&copy; 2026 Tiketku. All Rights Reserved. Project UTS Front-End Programming.</p>
     </footer>
 
+    <script src="../../asset/js/app.js"></script>
     <script>
       document.querySelectorAll('.btn-book-ticket').forEach(button => {
         button.addEventListener('click', () => {
