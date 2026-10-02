@@ -1,4 +1,16 @@
 const formLogin = document.getElementById("formLogin");
+const passwordInput = document.getElementById("password");
+const togglePassword = document.getElementById("togglePassword");
+
+togglePassword.addEventListener("click", function() {
+    if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        togglePassword.innerText = "👁";
+    } else {
+        passwordInput.type = "password";
+        togglePassword.innerText = "👁";
+    }
+});
 
 formLogin.addEventListener("submit", function(event) {
     event.preventDefault();
@@ -8,16 +20,32 @@ formLogin.addEventListener("submit", function(event) {
     const dataUser = localStorage.getItem("user");
 
     if (dataUser === null) {
-        alert("Akun belum terdaftar");
+        tampilToast("Akun belum terdaftar", "error");
         return;
     }
 
     const user = JSON.parse(dataUser);
+
     if (email === user.email && password === user.password) {
         localStorage.setItem("isLogin", "true");
-        alert("Login berhasil");
-        window.location.href = "../../index.html";
+        tampilToast("Login berhasil", "success");
+
+        setTimeout(function() {
+            window.location.href = "../../index.html";
+        }, 1500);
     } else {
-        alert("Email atau password salah");
+        tampilToast("Email atau password salah", "error");
     }
 });
+
+function tampilToast(pesan, tipe) {
+    const toast = document.getElementById("toast");
+    toast.innerText = pesan;
+    toast.classList.remove("success", "error");
+    toast.classList.add(tipe);
+    toast.classList.add("show");
+
+    setTimeout(function() {
+        toast.classList.remove("show");
+    }, 2000);
+}

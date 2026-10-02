@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riwayat pemesanan</title>
+    <link rel="stylesheet" href="../../asset/css/style.css">
+    <link rel="stylesheet" href="../../asset/css/history.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="kontainer-logo">
+          <a href="../../index.html" class="warna-logo">Tiket<span>ku</span></a>
+        </div>
+        <nav class="navbar">
+            <a href="../paket/explore.html">Paket</a>
+            <a href="../tiket/dashboard.html">Tiket Pesawat</a>
+            <a href="../booking/hotel.html">Hotel</a>
+            <a href="#">Jadwal</a>
+            <a href="history.html" class="active">Cek Pesanan</a>
+            <a href="#">Bantuan</a>
+        </nav>
+        <div>
+            <a href="../inbox/notifikasi.html" class ="inbox">inbox</a>
+        </div>
+        <div class="akun">
+            <a href="../auth/login.html" class="login">Masuk</a>
+            <a href="../auth/daftar.html" class="daftar">Daftar</a>
+        </div>
+    </header>
+
+    <main class="page-wrapper">
+        <section class="history-section">
+            <div class="history-container">
+                <div class="history-header">
+                    <div>
+                        <h1>Riwayat Pemesanan</h1>
+                        <p>Semua pemesanan hotel yang kamu lakukan</p>
+                    </div>
+                    <select class="sort-history">
+                        <option>Semua Pesanan</option>
+                        <option>Berhasil</option>
+                        <option>Dibatalkan</option>
+                    </select>
+                </div>
+                <div class="history-list">
+                    <div class="history-card">
+                        <img src="../../asset/hotel/1.png" 
+                            alt="Grand Sahid Jaya Jakarta"
+                            class="history-image">
+                        <div class="history-info">
+                            <h2>Grand Sahid Jaya Jakarta</h2>
+                            <p class="history-location">Tanah Abang, Jakarta Pusat, DKI Jakarta</p>
+                            <div class="history-detail">
+                                <div>
+                                    <p>Check in</p>
+                                    <strong>12 Oktober 2026</strong>
+                                </div>
+                                <div>
+                                    <p>Check out</p>
+                                    <strong> 14 Oktober 2026</strong>
+                                </div>
+                                <div>
+                                    <p>Tamu</p>
+                                    <strong> 2 Tamu</strong>
+                                </div>
+                                <div>
+                                    <p>Kamar</p>
+                                    <strong> 1 Kamar </strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="history-price">
+                            <p> Total Pembayaran </p>
+                            <h3> IDR 3.515.922 </h3>
+                            <span class="history-status berhasil"> Berhasil</span>
+                            <button class="btn-history">Lihat Detail</button>
+                        </div>
+                    </div>
+                    <div class="history-card">
+                        <img
+                            src="../../asset/hotel/2.png"
+                            alt="Jambuluwuk Mansion Pakubuwono"
+                            class="history-image">
+                        <div class="history-info">
+                            <h2>Jambuluwuk Mansion Pakubuwono</h2>
+                            <p class="history-location">Gelora, Jakarta Pusat, DKI Jakarta</p>
+
+                            <div class="history-detail">
+                                <div>
+                                    <p>Check in</p>
+                                    <strong>20 November 2026</strong>
+                                </div>
+                                <div>
+                                    <p>Check out</p>
+                                    <strong> 22 November 2026 </strong>
+                                </div>
+                                <div>
+                                    <p>Tamu</p>
+                                    <strong>2 Tamu</strong>
+                                </div>
+                                <div>
+                                    <p>Kamar</p>
+                                    <strong> 1 Kamar </strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="history-price">
+                            <p>Total Pembayaran</p>
+                            <h3>IDR 444.500</h3>
+                            <span class="history-status berhasil"> Berhasil</span>
+                            <button class="btn-history">Lihat Detail</button>
+                        </div>
+                    </div>
+
+                    <div class="history-card">
+                        <img
+                            src="../../asset/hotel/3.png"
+                            alt="Eminence Golf Resort"
+                            class="history-image">
+                        <div class="history-info">
+                            <h2> Eminence Golf & Resort Lembang Bandung </h2>
+                            <p class="history-location">Lembang, Bandung, Jawa Barat</p>
+                            <div class="history-detail">
+                                <div>
+                                    <p>Check in</p>
+                                    <strong>5 Desember 2026</strong>
+                                </div>
+                                <div>
+                                    <p>Check out</p>
+                                    <strong> 7 Desember 2026 </strong>
+                                </div>
+                                <div>
+                                    <p>Tamu</p>
+                                    <strong>4 Tamu</strong>
+                                </div>
+                                <div>
+                                    <p>Kamar</p>
+                                    <strong>2 Kamar</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="history-price">
+                            <p>Total Pembayaran</p>
+                            <h3>IDR 3.001.000</h3>
+                            <span class="history-status dibatalkan">Dibatalkan</span>
+                            <button class="btn-history">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="flight-history">
+    <div class="flight-history-header">
+        <h2>Riwayat Tiket Pesawat</h2>
+        <p>Semua pemesanan tiket pesawat yang kamu lakukan</p>
+    </div>
+
+    <div class="flight-history-list">
+        <div class="flight-history-card">
+            <div class="airline-badge garuda">
+                GA
+            </div>
+            <div class="flight-history-info">
+                <h3>Garuda Indonesia</h3>
+                <p class="flight-code-history">GA-820 - Boeing 737-800 - Full Service
+                </p>
+                <div class="flight-route-history">
+                    <div>
+                        <strong>08:00</strong>
+                        <span>CGK</span>
+                        <small>Jakarta</small>
+                    </div>
+                    <div class="flight-line-history">
+                       ----------
+                    </div>
+                    <div>
+                        <strong>10:50</strong>
+                        <span>SIN</span>
+                        <small>Singapura</small>
+                    </div>
+                </div>
+                <p class="flight-date-history">28 September 2026 - 1 Penumpang - Ekonomi Flexi
+                </p>
+            </div>
+            <div class="flight-history-price">
+                <p>Total Pembayaran</p>
+                <h3>Rp 1.485.000</h3>
+                <span class="flight-status berhasil">Berhasil</span>
+                <button class="btn-history-flight">Lihat Detail</button>
+            </div>
+        </div>
+
+
+        <div class="flight-history-card">
+            <div class="airline-badge singapore">
+                SQ
+            </div>
+            <div class="flight-history-info">
+                <h3>Singapore Airlines</h3>
+                <p class="flight-code-history">
+                    SQ-951 - Airbus A350-900 - Full Service
+                </p>
+                <div class="flight-route-history">
+                    <div>
+                        <strong>11:15</strong>
+                        <span>CGK</span>
+                        <small>Jakarta</small>
+                    </div>
+                    <div class="flight-line-history">
+                        ----------
+                    </div>
+                    <div>
+                        <strong>14:00</strong>
+                        <span>SIN</span>
+                        <small>Singapura</small>
+                    </div>
+                </div>
+                <p class="flight-date-history">28 September 2026 - 1 Penumpang - Ekonomi</p>
+            </div>
+            <div class="flight-history-price">
+                <p>Total Pembayaran</p>
+                <h3>Rp 2.150.000</h3>
+                <span class="history-status berhasil"> Berhasil</span>
+                <button class="btn-history-flight">Lihat Detail</button>
+            </div>
+        </div>
+
+        <div class="flight-history-card">
+            <div class="airline-badge batik">ID</div>
+            <div class="flight-history-info">
+                <h3>Batik Air</h3>
+                <p class="flight-code-history">ID-7153 - Boeing 737-800NG - Standar Kabin</p>
+                <div class="flight-route-history">
+                    <div>
+                        <strong>13:40</strong>
+                        <span>CGK</span>
+                        <small>Jakarta</small>
+                    </div>
+                    <div class="flight-line-history">
+                        ----------
+                    </div>
+                    <div>
+                        <strong>16:35</strong>
+                        <span>SIN</span>
+                        <small>Singapura</small>
+                    </div>
+                </div>
+                <p class="flight-date-history">28 September 2026 - 1 Penumpang - Ekonomi</p>
+            </div>
+            <div class="flight-history-price">
+                <p>Total Pembayaran</p>
+                <h3>Rp 985.000</h3>
+                <span class="flight-status berhasil">Berhasil</span>
+                <button class="btn-history-flight"> Lihat Detail</button>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+     <footer class="footer">
+        <ul class="list">
+            <li><a href="../tiket/dashboard.html">Pesawat</a></li>
+            <li><a href="../booking/hotel.html">Hotel</a></li>
+            <li><a href="../kebijakan/kebijakan_privasi.html">Kebijakan Privasi</a></li>
+            <li><a href="../kebijakan/syarat_ketentuan.html">Syarat dan Ketentuan</a></li>
+        </ul>
+        <a href="../../index.html" class="warna-logo">Tiket<span>ku</span></a>
+        <p>Email: cs@tiketku.id</p>
+        <p>Call Center: +62 ### #### ####</p>
+        <p>&copy; 2026 Tiketku. All Rights Reserved. Project UTS Front-End Programming.</p>
+    </footer>
+</body>
+</html>

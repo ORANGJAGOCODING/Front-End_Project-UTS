@@ -89,6 +89,64 @@ body {
     text-decoration: none;
 }
 
+.akun .inbox {
+    display: none;
+    width: 50px;
+    height: 50px;
+    padding: 8px 12px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: black;
+    border-radius: 50%;
+    border: 1px solid #000000;
+    background-color: #98abf0;
+}
+
+.profil {
+    display: none;
+    width: 50px;
+    height: 50px;
+    padding: 8px 12px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid #000000;
+    background-color: #d6c292;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.inbox.show,
+.profil.show {
+    display: flex;
+}
+
+.login.hide,
+.daftar.hide {
+    display: none;
+}
+
+.profilDropdown {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    width: 300px;
+    min-width: 220px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    padding: 12px;
+    z-index: 1000;
+}
+
+.profilDropdown.show {
+    display: block;
+}
+
 .login {
     width: 100%;
     padding: 8px 12px;
@@ -127,25 +185,24 @@ body {
 
 .footer {
     position: relative;
-    padding: 1.5rem 4rem;
-    background-color: var(--second-bg-color);
+    padding: 1.2rem 4rem;
     background-color: #f8fafc;
     border-top: 1px dashed #c8ced6;
 }
 
 .footer ul {
-    position: relative;
-    z-index: 1;
     display: flex;
     flex-wrap: wrap;
-    gap: 3rem;
-    margin-top: 2rem;
-    margin-bottom: 5rem;
+    gap: 2rem;
+    list-style: none;
+    margin: 0 0 1.5rem 0;
+    padding: 0;
 }
 
 .footer ul li a {
-    font-size: 1.4rem;
+    font-size: 1rem;
     color: var(--text-color);
+    text-decoration: none;
     transition: 0.5s ease-in-out;
 }
 
@@ -153,10 +210,14 @@ body {
     color: var(--main-color);
 }
 
+.footer .warna-logo {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
 .footer p {
-    position: relative;
-    z-index: 1;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--text-color);
     text-align: right;
+    margin: 0.2rem 0;
 }

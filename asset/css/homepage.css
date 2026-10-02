@@ -4,148 +4,106 @@
     box-sizing: border-box;
 }
 
-body {
-    flex-direction: column;
-    background-image: url('../images/pemandangan.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 400px;
+h1 {
+    padding-top: 0px;
+    font-size:80px;
 }
 
-.profilDropdown {
-    display: none;
-    position: absolute;
-    right: 0;
-    top: 54px;
-    width: 300px;
-    background-color: #ffffff;
-    border-radius: 16px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-    padding: 12px;
-    z-index: 1000;
+h2 {
+    font-size:50px;
 }
 
-.profilDropdown.show {
-    display: block;
+h4 {
+    margin-bottom: 10px;
 }
-
-
-
-/* header {
-    background-color: #ffffff;
-    width:100%;
-    position: fixed;
-    display: flex;
-    z-index: 1;
-} */
 
 section {
     min-height: 100vh;
     padding: 10rem 10% 10rem;
 }
 
-/*.warna-logo {
-    font-size: 36px;
-    font-weight: 800;
-    color: #0064d2;
-    text-decoration: none;
-    letter-spacing: -1px;
-    padding: 10px;
-    transition: 0.5s ease-in-out;
-}
-
-.warna-logo:hover {
-    transform: translateY(5px);
-}
-
-.warna-logo span {
-    color: #efab0c;
-}
-
-form {
-    align-self: center;
-}
-
-form input {
-    width: 100%;
-    padding: 12px 14px;
-    border: 1px solid #ced4da;
-    border-radius: 8px;
-    font-size: 14px;
-    transition: all 0.2s ease;
-    box-sizing: border-box;
-}
-
-form input:focus {
-    outline: none;
-    border-color: #0064d2;
-    box-shadow: 0 0 0 3px rgba(0, 100, 210, 0.15);
-}
-
-nav {
-    display:flex;
-    margin-left: auto;
-    padding: 10px;
-    gap: 8px;
-}
-
-.explore {
-    width: 100%;
-    padding: 13px;
-    background-color: #0035f4;
-    color: #ffffff;
-    border: none;
-    border-radius: 8px;
-    font-size: 15px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-    margin-top: 10px;
-}
-
-.explore:hover {
-    background-color: #0873ed;
-}
-
-.login {
-    width: 100%;
-    padding: 13px;
-    background-color: #ffffff;
-    color: #000000;
-    border: none;
-    border-radius: 8px;
-    font-size: 15px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-    margin-top: 10px;
-}
-
-.login:hover {
-    background-color: #b6bfca;
-}
-
-.daftar {
-    width: 100%;
-    padding: 13px;
-    background-color: #0035f4;
-    color: #ffffff;
-    border: none;
-    border-radius: 8px;
-    font-size: 15px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-    margin-top: 10px;
-}
-
-.daftar:hover {
-    background-color: #0873ed;
-} */
-
 .home {
-    padding-top: 130px;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url('../images/pemandangan.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
     text-align: center;
+    align-items: center;
     color: #ffffff;
+}
+
+.menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 6px 0;
+}
+
+.menu-list li a {
+    display: block;
+    padding: 10px 18px;
+    color: #222222;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.menu-list li a:hover {
+    background-color: #f0f4f8;
+}
+
+.promo {
+    background-color:rgb(132, 236, 200)
+}
+
+.promo-cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.promo-items {
+    width: 500px;
+    padding: 8px 12px;
+    background-color: aqua;
+    border: 1px solid #efab0c;
+    border-radius: 8px;
+    border-width: 1px;
+    gap: 10px;
+    transition: transform 0.3s ease;   
+}
+
+.promo-items:hover {
+    transform: translateY(-5px);
+}
+
+.promo-items button {
+    padding: 8px 12px;
+    background-color: #385ee6;
+    color: #ffffff;
+    border: 1px solid #efab0c;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    margin-top: 0px;
+}
+
+.promo-items button:hover {
+    background-color: #064d9e;
+}
+
+.claim-promo {
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    background-color: aquamarine;
+    border-radius: 8px;
+    padding: 6px 12px;
 }

@@ -19,7 +19,10 @@
                 </div>
                 <div class="grup-form">
                     <label>Password</label>
-                    <input type="password" id="password" placeholder="********" required>
+                    <div class="password-box">
+                        <input type="password" id="password" placeholder="********" required>
+                        <button type="button" id="togglePassword">👁</button>
+                    </div>
                 </div>
                 <button type="submit" class="tombol-masuk">Masuk</button>
             </form>
@@ -27,6 +30,7 @@
             <p class="teks-bwh">Dengan melanjutkan, kamu menyetujui <a href="../kebijakan/kebijakan_privasi.html">Kebijakan Privasi</a> dan <a href="../kebijakan/syarat_ketentuan.html">Syarat & Ketentuan</a> Tiketku.</p>
         </div>
     </div>
+    <div id="toast" class="toast"></div>
     <script src="../../asset/js/login.js"></script>
 </body>
 </html>
