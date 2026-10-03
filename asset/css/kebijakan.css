@@ -69,3 +69,44 @@ body {
 .halaman-kebijakan a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 1024px) {
+    .halaman-kebijakan {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .halaman-kebijakan {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .halaman-kebijakan h1,
+    .halaman-kebijakan h2 {
+        font-size: 24px;
+    }
+
+    .halaman-kebijakan p,
+    .halaman-kebijakan li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .halaman-kebijakan {
+        padding: 15px 12px;
+    }
+
+    .halaman-kebijakan h1,
+    .halaman-kebijakan h2 {
+        font-size: 21px;
+    }
+
+    .halaman-kebijakan p,
+    .halaman-kebijakan li {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+}
