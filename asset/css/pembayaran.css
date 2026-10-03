@@ -1,0 +1,385 @@
+.page-wrapper {
+    max-width: 1140px;
+    margin: 24px auto 60px;
+    padding: 0 20px;
+}
+
+.booking-stepper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 16px 28px;
+    margin-bottom: 24px;
+}
+
+.step-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #64748b;
+}
+
+.step-item.clickable {
+    cursor: pointer;
+}
+
+.step-circle {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 13px;
+    background: #f1f5f9;
+    color: #64748b;
+}
+
+.step-item.completed .step-circle {
+    background: #e0f2fe;
+    color: #0284c7;
+}
+
+.step-item.active .step-circle {
+    background: #0064d2;
+    color: #ffffff;
+}
+
+.step-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.step-number {
+    font-size: 11px;
+    color: #94a3b8;
+    text-transform: uppercase;
+}
+
+.step-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #0f172a;
+}
+
+.step-divider {
+    flex: 1;
+    max-width: 80px;
+    height: 2px;
+    background: #e2e8f0;
+    margin: 0 16px;
+}
+
+.step-divider.completed {
+    background: #0284c7;
+}
+
+.countdown-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fffbeb;
+    border: 1px solid #fef3c7;
+    border-radius: 12px;
+    padding: 14px 20px;
+    margin-bottom: 24px;
+}
+
+.countdown-text {
+    font-size: 14px;
+    color: #b45309;
+}
+
+.countdown-text strong {
+    color: #d97706;
+    font-size: 16px;
+    margin-left: 6px;
+}
+
+.order-id-badge {
+    font-size: 13px;
+    color: #78350f;
+}
+
+.payment-layout-grid {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 24px;
+    align-items: start;
+}
+
+.payment-section-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 16px;
+}
+
+.payment-method-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.method-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 16px;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.method-card:hover {
+    border-color: #93c5fd;
+    background: #f8fafc;
+}
+
+.method-card:has(input[type="radio"]:checked) {
+    border-color: #0064d2;
+    background: #eff6ff;
+}
+
+.method-card input[type="radio"] {
+    margin-top: 3px;
+    accent-color: #0064d2;
+}
+
+.method-content {
+    flex: 1;
+}
+
+.method-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.method-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.badge-auto {
+    font-size: 11px;
+    font-weight: 600;
+    color: #0369a1;
+    background: #e0f2fe;
+    padding: 2px 8px;
+    border-radius: 6px;
+}
+
+.method-desc {
+    font-size: 12px;
+    color: #64748b;
+    margin: 0;
+}
+
+.instruction-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 16px;
+}
+
+.va-display-box {
+    background: #f8fafc;
+    border: 1px dashed #cbd5e1;
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin-bottom: 18px;
+}
+
+.va-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.va-label {
+    font-size: 11px;
+    color: #64748b;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.va-input-box {
+    border: none;
+    background: transparent;
+    font-size: 18px;
+    font-weight: 700;
+    color: #0064d2;
+    letter-spacing: 1px;
+    outline: none;
+    width: 100%;
+}
+
+.step-guide-list {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 13px;
+    color: #334155;
+    line-height: 1.8;
+}
+
+.summary-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 22px;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.03);
+}
+
+.summary-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.summary-header h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0;
+}
+
+.currency-tag {
+    font-size: 11px;
+    font-weight: 700;
+    background: #e0f2fe;
+    color: #0369a1;
+    padding: 2px 8px;
+    border-radius: 6px;
+}
+
+.summary-flight-brief {
+    background: #f8fafc;
+    border-radius: 8px;
+    padding: 10px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-bottom: 14px;
+}
+
+.flight-route-text {
+    font-size: 13px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.flight-class-text {
+    font-size: 11px;
+    color: #64748b;
+}
+
+.summary-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 13px;
+    color: #475569;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.free-text {
+    color: #059669;
+    font-weight: 600;
+}
+
+.summary-divider {
+    height: 1px;
+    background: #e2e8f0;
+    margin: 16px 0;
+}
+
+.summary-total-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 18px;
+}
+
+.total-title {
+    font-size: 12px;
+    font-weight: 600;
+    color: #64748b;
+    display: block;
+}
+
+.total-note {
+    font-size: 10px;
+    color: #94a3b8;
+}
+
+.total-price-large {
+    font-size: 18px;
+    font-weight: 800;
+    color: #0064d2;
+}
+
+.btn-check-payment {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    background: #0064d2;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background 0.2s;
+    box-sizing: border-box;
+}
+
+.btn-check-payment:hover {
+    background: #0050aa;
+}
+
+.security-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 14px;
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sec-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: #475569;
+}
+
+@media (max-width: 860px) {
+    .payment-layout-grid {
+        grid-template-columns: 1fr;
+    }
+}

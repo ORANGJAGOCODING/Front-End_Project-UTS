@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pembayaran Tiket - Tiketku</title>
+        <link rel="stylesheet" href="../../asset/css/style.css">
+        <link rel="stylesheet" href="../../asset/css/pembayaran.css">
+    </head>
+    <body>
+        <header class="header">
+        <div class="kontainer-logo">
+          <a href="../../index.html" class="warna-logo">Tiket<span>ku</span></a>
+        </div>
+        <nav class="navbar">
+            <a href="../paket/explore.html">Paket</a>
+            <a href="../tiket/dashboard.html" class="active">Tiket Pesawat</a>
+            <a href="../booking/hotel.html">Hotel</a>
+            <a href="#">Jadwal</a>
+            <a href="../history/history.html">Cek Pesanan</a>
+            <a href="#">Bantuan</a>
+        </nav>
+        <div class="akun">
+            <a href="../inbox/notifikasi.html" class ="inbox" id="inbox">&#9993;</a>
+            <button class="profil" id="profil" aria-label="Menu">&#128100;</button>
+            <div class="profilDropdown" id="profilDropdown">
+                <ul class="menu-list">
+                    <li><a href="#wishlist">Wishlist</a></li>
+                    <li><a href="#orders">Your Orders</a></li>
+                    <li><a href="#passengers">Simpan Data Penumpang</a></li>
+                    <li><a href="#vouchers">Voucher Box</a></li>
+                    <li><a href="#payment">Metode Pembayaran</a></li>
+                    <li><a href="#refunds">Daftar Refund</a></li>
+                    <li><a href="#reviews">My Review</a></li>
+                    <li><a href="#claim">Claim Center</a></li>
+                    <li><a href="#" id="logout" class="logout">Keluar (Logout)</a></li>
+                </ul>
+            </div>
+            <a href="../auth/login.html" class="login" id="login">Masuk</a>
+            <a href="../auth/daftar.html" class="daftar" id="daftar">Daftar</a>
+        </div>
+    </header>
+
+        <main class="page-wrapper">
+            <nav class="booking-stepper" aria-label="Alur Pemesanan">
+                <a href="dashboard.html" class="step-item completed clickable" title="Kembali ke Pilih Tiket">
+                    <div class="step-circle">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <div class="step-info">
+                        <span class="step-number">Langkah 1</span>
+                        <span class="step-title">Pilih Tiket</span>
+                    </div>
+                </a>
+
+                <div class="step-divider completed"></div>
+
+                <a href="detail.html" class="step-item completed clickable" title="Kembali ke Detail & Harga">
+                    <div class="step-circle">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <div class="step-info">
+                        <span class="step-number">Langkah 2</span>
+                        <span class="step-title">Detail & Rincian Harga</span>
+                    </div>
+                </a>
+
+                <div class="step-divider completed"></div>
+
+                <div class="step-item active">
+                    <div class="step-circle">3</div>
+                    <div class="step-info">
+                        <span class="step-number">Langkah 3</span>
+                        <span class="step-title">Pembayaran</span>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="countdown-banner">
+                <div class="countdown-text">
+                    <span>Selesaikan Pembayaran Dalam:</span>
+                    <strong>01:45:20</strong>
+                </div>
+                <div class="order-id-badge">
+                    <span>No. Pesanan: <strong>TK-928172</strong></span>
+                </div>
+            </div>
+
+            <div class="payment-layout-grid">
+                <div class="payment-main-content">
+                    <section class="payment-section-card">
+                        <h2 class="section-title">Pilih Metode Pembayaran</h2>
+
+                        <div class="payment-method-list">
+                            <label class="method-card" for="payBca">
+                                <input type="radio" name="paymentMethod" id="payBca" checked>
+                                <div class="method-content">
+                                    <div class="method-header">
+                                        <span class="method-name">BCA Virtual Account</span>
+                                        <span class="badge-auto">Verifikasi Instan</span>
+                                    </div>
+                                    <p class="method-desc">Bayar via BCA Mobile, myBCA, KlikBCA, atau ATM BCA.</p>
+                                </div>
+                            </label>
+
+                            <label class="method-card" for="payMandiri">
+                                <input type="radio" name="paymentMethod" id="payMandiri">
+                                <div class="method-content">
+                                    <div class="method-header">
+                                        <span class="method-name">Mandiri Virtual Account</span>
+                                        <span class="badge-auto">Verifikasi Instan</span>
+                                    </div>
+                                    <p class="method-desc">Bayar via Livin' by Mandiri, ATM, atau Internet Banking.</p>
+                                </div>
+                            </label>
+
+                            <label class="method-card" for="payQris">
+                                <input type="radio" name="paymentMethod" id="payQris">
+                                <div class="method-content">
+                                    <div class="method-header">
+                                        <span class="method-name">QRIS & E-Wallet</span>
+                                        <span class="badge-auto">Bebas Biaya</span>
+                                    </div>
+                                    <p class="method-desc">Pindai kode QR via GoPay, OVO, ShopeePay, Dana, dll.</p>
+                                </div>
+                            </label>
+
+                            <label class="method-card" for="payCard">
+                                <input type="radio" name="paymentMethod" id="payCard">
+                                <div class="method-content">
+                                    <div class="method-header">
+                                        <span class="method-name">Kartu Kredit / Debit</span>
+                                        <span class="badge-auto">Visa / Mastercard</span>
+                                    </div>
+                                    <p class="method-desc">Dukungan 3D-Secure dengan enkripsi keamanan perbankan.</p>
+                                </div>
+                            </label>
+                        </div>
+                    </section>
+
+                    <section class="payment-section-card instruction-card">
+                        <h3 class="instruction-title">Instruksi Pembayaran Virtual Account</h3>
+                        <div class="va-display-box">
+                            <div class="va-info">
+                                <span class="va-label">Nomor Virtual Account</span>
+                                <input type="text" readonly class="va-input-box" value="3727060807">
+                            </div>
+                        </div>
+
+                        <ol class="step-guide-list">
+                            <li>Buka aplikasi m-Banking atau ATM bank pilihan Anda.</li>
+                            <li>Pilih menu <strong>Transfer</strong> lalu pilih menu <strong>Virtual Account</strong>.</li>
+                            <li>Masukkan nomor Virtual Account di atas.</li>
+                            <li>Pastikan total nominal tagihan tepat sebesar <strong>Rp 2.995.000</strong>.</li>
+                            <li>Selesaikan transaksi dan simpan bukti transfer Anda.</li>
+                        </ol>
+                    </section>
+                </div>
+
+                <aside class="payment-sidebar">
+                    <div class="summary-card">
+                        <div class="summary-header">
+                            <h3>Ringkasan Tagihan</h3>
+                            <span class="currency-tag">IDR</span>
+                        </div>
+
+                        <div class="summary-flight-brief">
+                            <span class="flight-route-text">Jakarta (CGK) ⇄ Singapura (SIN)</span>
+                            <span class="flight-class-text">Garuda Indonesia • 1 Penumpang</span>
+                        </div>
+
+                        <div class="summary-list">
+                            <div class="summary-row">
+                                <span>Tiket Pesawat (PP)</span>
+                                <span>Rp 2.970.000</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Pajak & Biaya Bandara</span>
+                                <span class="free-text">Termasuk</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Biaya Layanan Sistem</span>
+                                <span>Rp 25.000</span>
+                            </div>
+                        </div>
+
+                        <div class="summary-divider"></div>
+
+                        <div class="summary-total-group">
+                            <div class="total-text-left">
+                                <span class="total-title">Total Pembayaran</span>
+                                <span class="total-note">Sesuai nominal transfer</span>
+                            </div>
+                            <div class="total-price-large">Rp 2.995.000</div>
+                        </div>
+
+                        <a href="../history/history.html" class="btn-check-payment">
+                            Saya Sudah Bayar
+                        </a>
+                    </div>
+
+                    <div class="security-card">
+                        <div class="sec-item">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                            <span>Transaksi Terproteksi Enkripsi SSL 256-bit</span>
+                        </div>
+                        <div class="sec-item">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>E-Tiket Otomatis Dikirim ke Email</span>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <ul class="list">
+                <li><a href="dashboard.html">Pesawat</a></li>
+                <li><a href="../booking/hotel.html">Hotel</a></li>
+                <li><a href="../kebijakan/kebijakan_privasi.html">Kebijakan Privasi</a></li>
+                <li><a href="../kebijakan/syarat_ketentuan.html">Syarat dan Ketentuan</a></li>
+            </ul>
+            <a href="../../index.html" class="warna-logo">Tiket<span>ku</span></a>
+            <p>Email: cs@tiketku.id</p>
+            <p>Call Center: +62 ### #### ####</p>
+            <p>&copy; 2026 Tiketku. All Rights Reserved. Project UTS Front-End Programming.</p>
+        </footer>
+    </body>
+</html>

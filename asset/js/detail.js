@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   document.getElementById('btnConfirmPay')?.addEventListener('click', () => {
-    alert('Terima kasih! Pesanan Anda sedang diproses ke pembayaran.');
+    alert('Pesanan Anda sedang diproses ke pembayaran, silakan lanjutkan ke halaman pembayaran.');
     modal?.classList.remove('active');
   });
 });

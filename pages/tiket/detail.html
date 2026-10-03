@@ -8,33 +8,52 @@
         <link rel="stylesheet" href="../../asset/css/detail.css">
     </head>
     <body>
+        <!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Daftar Tiket Penerbangan</title>
+        <link rel="stylesheet" href="../../asset/css/style.css">
+        <link rel="stylesheet" href="../../asset/css/tiket.css">
+    </head>
+    <body>
         <header class="header">
-            <div class="kontainer-logo">
-                <a href="/index.html" class="warna-logo">Tiket<span>ku</span></a>
+        <div class="kontainer-logo">
+          <a href="../../index.html" class="warna-logo">Tiket<span>ku</span></a>
+        </div>
+        <nav class="navbar">
+            <a href="../paket/explore.html">Paket</a>
+            <a href="../tiket/dashboard.html" class="active">Tiket Pesawat</a>
+            <a href="../booking/hotel.html">Hotel</a>
+            <a href="#">Jadwal</a>
+            <a href="../history/history.html">Cek Pesanan</a>
+            <a href="#">Bantuan</a>
+        </nav>
+        <div class="akun">
+            <a href="../inbox/notifikasi.html" class ="inbox" id="inbox">&#9993;</a>
+            <button class="profil" id="profil" aria-label="Menu">&#128100;</button>
+            <div class="profilDropdown" id="profilDropdown">
+                <ul class="menu-list">
+                    <li><a href="#wishlist">Wishlist</a></li>
+                    <li><a href="#orders">Your Orders</a></li>
+                    <li><a href="#passengers">Simpan Data Penumpang</a></li>
+                    <li><a href="#vouchers">Voucher Box</a></li>
+                    <li><a href="#payment">Metode Pembayaran</a></li>
+                    <li><a href="#refunds">Daftar Refund</a></li>
+                    <li><a href="#reviews">My Review</a></li>
+                    <li><a href="#claim">Claim Center</a></li>
+                    <li><a href="#" id="logout" class="logout">Keluar (Logout)</a></li>
+                </ul>
             </div>
-
-            <nav class="navbar">
-                <a href="/pages/explore/explore.html">Explore</a>
-                <a href="/pages/tiket/dashboard.html" class="active">Tiket Pesawat</a>
-                <a href="/pages/booking/hotel.html">Hotel</a>
-                <a href="#">Jadwal</a>
-                <a href="#">Cek Pesanan</a>
-                <a href="#">Bantuan</a>
-            </nav>
-
-            <div>
-                <a href="/pages/inbox/notifikasi.html" class="inbox">inbox</a>
-            </div>
-
-            <div class="akun">
-                <a href="../auth/login.html" class="login">Masuk</a>
-                <a href="../auth/daftar.html" class="daftar">Daftar</a>
-            </div>
-        </header>
+            <a href="../auth/login.html" class="login" id="login">Masuk</a>
+            <a href="../auth/daftar.html" class="daftar" id="daftar">Daftar</a>
+        </div>
+    </header>
 
         <main class="page-wrapper">
             <nav class="booking-stepper" aria-label="Alur Pemesanan">
-                <a href="/pages/tiket/dashboard.html" class="step-item completed clickable" title="Kembali ke Pencarian Tiket">
+                <a href="dashboard.html" class="step-item completed clickable" title="Kembali ke Pencarian Tiket">
                     <div class="step-circle">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
                             <polyline points="20 6 9 17 4 12"></polyline>
@@ -86,7 +105,7 @@
                 </div>
 
                 <div>
-                    <a href="/pages/tiket/dashboard.html" class="btn-change-flight">
+                    <a href="dashboard.html" class="btn-change-flight">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                             <line x1="19" y1="12" x2="5" y2="12"></line>
                             <polyline points="12 19 5 12 12 5"></polyline>
@@ -567,7 +586,7 @@
                     </div>
                     <div class="modal-actions">
                         <button type="button" class="btn-modal-cancel" id="btnCloseModal">Kembali</button>
-                        <button type="button" class="btn-modal-confirm" id="btnConfirmPay">Bayar Sekarang</button>
+                        <a href="pembayaran.html" class="btn-modal-confirm" id="btnConfirmPay">Bayar Sekarang</a>
                     </div>
                 </div>
             </div>
@@ -575,10 +594,10 @@
 
         <footer class="footer">
             <ul class="list">
-                <li><a href="/pages/tiket/dashboard.html">Pesawat</a></li>
-                <li><a href="/pages/booking/hotel.html">Hotel</a></li>
-                <li><a href="/pages/kebijakan/kebijakan_privasi.html">Kebijakan Privasi</a></li>
-                <li><a href="/pages/kebijakan/syarat_ketentuan.html">Syarat dan Ketentuan</a></li>
+                <li><a href="dashboard.html">Pesawat</a></li>
+                <li><a href="../booking/hotel.html">Hotel</a></li>
+                <li><a href="../kebijakan/kebijakan_privasi.html">Kebijakan Privasi</a></li>
+                <li><a href="../kebijakan/syarat_ketentuan.html">Syarat dan Ketentuan</a></li>
             </ul>
             <a href="../../index.html" class="warna-logo">Tiket<span>ku</span></a>
             <p>Email: cs@tiketku.id</p>
