@@ -1,9 +1,9 @@
-document.addEventListener("DOMContentLoaded", function () {
-
     const isLogin = localStorage.getItem("isLogin");
     const user = localStorage.getItem("user");
     const namaUser = document.getElementById("namaUser");
     const emailUser = document.getElementById("emailUser");
+
+document.addEventListener("DOMContentLoaded", function () {
 
     if (isLogin === "true" && user) {
         const users = JSON.parse(user);
@@ -12,8 +12,9 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
         window.location.href = "../auth/login.html";
     }
+});
 
-    if (logoutProfil) {
+if (logoutProfil) {
         logoutProfil.addEventListener('click', (event) => {
             event.preventDefault();    
             const konfirmasi = confirm("Apakah Anda yakin ingin keluar?");
@@ -23,4 +24,3 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
-});

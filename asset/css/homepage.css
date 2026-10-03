@@ -25,7 +25,7 @@ section {
 .home {
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url('../images/uluwatu.jpeg');
+    background-image: linear-gradient(rgba(6, 89, 92, 0.7), rgba(206, 230, 240, 0.1)), url('../images/uluwatu.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -33,10 +33,6 @@ section {
     text-align: center;
     align-items: center;
     color: #ffffff;
-}
-
-.promo {
-    background: linear-gradient(135deg, #70e1b5, #38ef7d);
 }
 
 .promo-cards {
@@ -49,7 +45,7 @@ section {
 .promo-items {
     width: 500px;
     padding: 8px 12px;
-    background-color: aqua;
+    background-color:#48768d;;
     border: 1px solid #efab0c;
     border-radius: 8px;
     border-width: 1px;
@@ -63,7 +59,7 @@ section {
 
 .promo-items button {
     padding: 8px 12px;
-    background-color: #385ee6;
+    background-color: #efab0c;
     color: #ffffff;
     border: 1px solid #efab0c;
     border-radius: 8px;
@@ -75,7 +71,7 @@ section {
 }
 
 .promo-items button:hover {
-    background-color: #064d9e;
+    background-color: #c78d08;
 }
 
 .claim-promo {
@@ -83,7 +79,7 @@ section {
     justify-content: space-between;
     text-align: center;
     align-items: center;
-    background-color: aquamarine;
+    background-color: white;
     border-radius: 8px;
     padding: 6px 12px;
 }
