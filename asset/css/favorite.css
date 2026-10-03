@@ -102,7 +102,7 @@
 
 .hotel-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 24px rgba(96, 4, 243, 0.12);
+    box-shadow: 0 10px 24px rgba(2, 132, 199, 0.12);
 }
 
 .hotel-image {
@@ -197,21 +197,22 @@
 
 .btn-detail {
     color: #ffffff;
-    background: #6004f3;
+    background: #0284c7;
     padding: 9px 22px;
     font-size: 13px;
-    font-weight: 600;
+    font-weight: 700;
     border-radius: 8px;
     text-decoration: none;
     transition: all 0.25s ease;
     display: inline-block;
     text-align: center;
+    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);
 }
 
 .btn-detail:hover {
-    background: #4b02c0;
+    background: #0369a1;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(96, 4, 243, 0.3);
+    box-shadow: 0 6px 16px rgba(2, 132, 199, 0.35);
 }
 
 .card-ticket {
@@ -580,7 +581,20 @@
 }
 
 
-@media (max-width: 900px) {
+/* Responsiveness */
+@media (max-width: 768px) {
+    .favorite-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .favorite-tabs {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
     .hotel-card {
         flex-direction: column;
         align-items: stretch;
@@ -591,21 +605,34 @@
         height: 200px;
     }
 
+    .hotel-info {
+        width: 100%;
+    }
+
     .hotel-price {
-        align-items: flex-start;
+        width: 100%;
         border-left: none;
         border-top: 1px solid #e2e8f0;
         padding-left: 0;
         padding-top: 14px;
-        margin-top: 10px;
+        align-items: flex-start;
     }
 
     .btn-detail {
         width: 100%;
+        text-align: center;
     }
 
     .card-ticket {
         flex-direction: column;
+    }
+
+    .content-ticket {
+        width: 100%;
+    }
+
+    .content-data {
+        flex-wrap: wrap;
     }
 
     .ticket-stub {
@@ -615,20 +642,27 @@
     }
 }
 
-@media (max-width: 600px) {
-    .favorite-header {
-        flex-direction: column;
-        align-items: flex-start;
+@media (max-width: 480px) {
+    .favorite-header-text h1 {
+        font-size: 24px;
     }
 
     .favorite-tabs {
-        width: 100%;
-        justify-content: space-between;
+        gap: 8px;
+    }
+
+    .tab-btn {
+        font-size: 12px;
+        white-space: nowrap;
     }
 
     .data-flex {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 8px;
+    }
+
+    .facilities-badges {
+        flex-wrap: wrap;
     }
 }
