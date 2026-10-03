@@ -12,8 +12,8 @@ body {
 }
 
 section {
-    min-height: 70vh;
-    padding: 10rem 10% 10rem;
+    min-height: 55vh;
+    padding: 2rem 10% 10rem;
 }
 
 .explore-home {
@@ -24,6 +24,7 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    font-size: 2rem;
 }
 
 .explore-destinations h2 {
@@ -56,6 +57,13 @@ section {
     background: #efab0c;
     color: rgb(240, 237, 255);
     border-radius: 1.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.explore-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(243, 187, 4, 0.25);
 }
 
 .explore-item img {

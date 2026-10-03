@@ -25,7 +25,7 @@ section {
 .home {
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url('../images/pemandangan.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url('../images/uluwatu.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
