@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Riwayat pemesanan</title>
+    <title>Riwayat Pemesanan - Tiketku</title>
     <link rel="stylesheet" href="../../asset/css/style.css">
     <link rel="stylesheet" href="../../asset/css/history.css">
 </head>
 
 <body>
+    <!-- Header Global -->
     <header class="header">
         <div class="kontainer-logo">
-          <a href="../../index.html" class="warna-logo">Tiket<span>ku</span></a>
+            <a href="../../index.html" class="warna-logo">Tiket<span>ku</span></a>
         </div>
         <nav class="navbar">
             <a href="../paket/explore.html">Paket</a>
@@ -19,14 +20,21 @@
             <a href="../booking/hotel.html">Hotel</a>
             <a href="#">Jadwal</a>
             <a href="history.html" class="active">Cek Pesanan</a>
+            <a href="../favorite/favorite.html">Favorite</a>
             <a href="#">Bantuan</a>
         </nav>
-        <div>
-            <a href="../inbox/notifikasi.html" class ="inbox">inbox</a>
-        </div>
         <div class="akun">
-            <a href="../auth/login.html" class="login">Masuk</a>
-            <a href="../auth/daftar.html" class="daftar">Daftar</a>
+            <a href="../inbox/notifikasi.html" class="inbox" id="inbox">&#9993;</a>
+            <button class="profil" id="profil" aria-label="Menu">&#128100;</button>
+            <div class="profilDropdown" id="profilDropdown">
+                <ul class="menu-list">
+                    <li><a href="../profil/profil.html">Profil</a></li>
+                    <li><a href="../favorite/favorite.html">Favorite</a></li>
+                    <li><a href="#" id="logout" class="logout">Keluar (Logout)</a></li>
+                </ul>
+            </div>
+            <a href="../auth/login.html" class="login" id="login">Masuk</a>
+            <a href="../auth/daftar.html" class="daftar" id="daftar">Daftar</a>
         </div>
     </header>
 
@@ -257,7 +265,7 @@
                 <button class="btn-history-flight"> Lihat Detail</button>
             </div>
         </div>
-    </div>
+        </div>
 </section>
 </main>
      <footer class="footer">
@@ -272,5 +280,6 @@
         <p>Call Center: +62 ### #### ####</p>
         <p>&copy; 2026 Tiketku. All Rights Reserved. Project UTS Front-End Programming.</p>
     </footer>
+    <script src="../../asset/js/app.js"></script>
 </body>
 </html>
