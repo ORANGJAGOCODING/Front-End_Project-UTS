@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ulasan Pengguna</title>
+    <link rel="stylesheet" href="../../asset/css/review.css">
 </head>
 <body>
-    <header>
-        <a href="../../index.html">Tiketku</a>
-        <nav>
+    <header class="header-review">
+        <a href="../../index.html" class="warna-logo">Tiket<span>ku</span></a>
+        <nav class="navbar-review">
             <a href="../../index.html">Beranda</a>
             <a href="../tiket/dashboard.html">Tiket</a>
             <a href="../booking/hotel.html">Hotel</a>
@@ -16,50 +17,60 @@
         </nav>
     </header>
 
-    <main>
-        <h1>Ulasan Pengguna</h1>
-        <p>Bagikan pengalaman kamu menggunakan Tiketku.</p>
+    <main class="review-container">
+        <div class="review-header">
+            <h1>Ulasan Pengguna</h1>
+            <p>Bagikan pengalaman kamu menggunakan Tiketku.</p>
+        </div>
 
-        <section>
+        <section class="review-form">
             <h2>Tulis Ulasan</h2>
 
-            <label>Nama</label>
-            <input type="text" id="nama" placeholder="Masukkan nama">
+            <div class="grup-form">
+                <label>Nama</label>
+                <input type="text" id="nama" placeholder="Masukkan nama">
+            </div>
 
-            <label>Rating</label>
-            <select id="rating">
-                <option value="5">★★★★★</option>
-                <option value="4">★★★★☆</option>
-                <option value="3">★★★☆☆</option>
-                <option value="2">★★☆☆☆</option>
-                <option value="1">★☆☆☆☆</option>
-            </select>
+            <div class="grup-form">
+                <label>Rating</label>
+                <select id="rating">
+                    <option value="5">★★★★★</option>
+                    <option value="4">★★★★☆</option>
+                    <option value="3">★★★☆☆</option>
+                    <option value="2">★★☆☆☆</option>
+                    <option value="1">★☆☆☆☆</option>
+                </select>
+            </div>
 
-            <label>Ulasan</label>
-            <textarea id="ulasan" placeholder="Tulis ulasan kamu"></textarea>
+            <div class="grup-form">
+                <label>Ulasan</label>
+                <textarea id="ulasan" placeholder="Tulis ulasan kamu"></textarea>
+            </div>
 
-            <button id="btnKirim">Kirim Ulasan</button>
+            <button id="btnKirim" class="btn-kirim">Kirim Ulasan</button>
         </section>
 
-        <section>
+        <section class="review-section">
             <h2>Ulasan Terbaru</h2>
 
-            <div>
-                <p>★★★★★</p>
-                <p>"Proses pesan tiketnya gampang dan cepat."</p>
-                <h4>jon</h4>
-            </div>
+            <div class="review-list">
+                <div class="review-card">
+                    <p class="review-star">★★★★★</p>
+                    <p class="review-text">"Proses pesan tiketnya gampang dan cepat."</p>
+                    <h4 class="review-name">jon</h4>
+                </div>
 
-            <div>
-                <p>★★★★★</p>
-                <p>"Hotel sesuai dengan informasi yang ditampilkan."</p>
-                <h4>cris</h4>
-            </div>
+                <div class="review-card">
+                    <p class="review-star">★★★★★</p>
+                    <p class="review-text">"Hotel sesuai dengan informasi yang ditampilkan."</p>
+                    <h4 class="review-name">cris</h4>
+                </div>
 
-            <div>
-                <p>★★★★☆</p>
-                <p>"Pembayarannya mudah dan prosesnya cepat."</p>
-                <h4>Budi</h4>
+                <div class="review-card">
+                    <p class="review-star">★★★★☆</p>
+                    <p class="review-text">"Pembayarannya mudah dan prosesnya cepat."</p>
+                    <h4 class="review-name">Budi</h4>
+                </div>
             </div>
         </section>
     </main>
