@@ -36,7 +36,7 @@ section {
 }
 
 .promo {
-    background-color:rgb(132, 236, 200)
+    background: linear-gradient(135deg, #70e1b5, #38ef7d);
 }
 
 .promo-cards {
