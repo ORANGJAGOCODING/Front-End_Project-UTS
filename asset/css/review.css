@@ -1,0 +1,297 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #1e293b;
+}
+
+.header-review {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 50px;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.warna-logo {
+    font-size: 28px;
+    font-weight: 800;
+    color: #0064d2;
+    text-decoration: none;
+    letter-spacing: -1px;
+}
+
+.warna-logo span {
+    color: #efab0c;
+}
+
+.navbar-review {
+    display: flex;
+    gap: 25px;
+}
+
+.navbar-review a {
+    color: #334155;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.navbar-review a:hover {
+    color: #0064d2;
+}
+
+.review-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.review-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.review-header h1 {
+    margin-bottom: 8px;
+}
+
+.review-header p {
+    color: #64748b;
+}
+
+.review-form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+}
+
+.review-form h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.grup-form {
+    margin-bottom: 18px;
+}
+
+.grup-form label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.grup-form input,
+.grup-form select,
+.grup-form textarea {
+    width: 100%;
+    padding: 11px 13px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.grup-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.btn-kirim {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #0064d2;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-kirim:hover {
+    background-color: #0873ed;
+}
+
+.review-section {
+    background-color: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.review-section h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.review-list {
+    display: flex;
+    gap: 20px;
+}
+
+.review-card {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.review-star {
+    color: #efab0c;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.review-text {
+    color: #64748b;
+    line-height: 1.6;
+}
+
+.review-name {
+    margin-bottom: 0;
+    color: #1e293b;
+}
+
+.review-box-index {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 24px 28px;
+    background-color: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.review-box-index h2 {
+    margin: 0 0 8px;
+    color: #1e293b;
+    font-size: 24px;
+}
+
+.review-box-index p {
+    margin: 0;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.review-button {
+    display: inline-block;
+    padding: 11px 20px;
+    background-color: #385ee6;
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid #efab0c;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+    transition: 0.2s ease;
+}
+
+.review-button:hover {
+    background-color: #2746c7;
+}
+
+@media (max-width: 1024px) {
+    .review-container {
+        max-width: 900px;
+    }
+
+    .review-box-index {
+        margin: 25px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-review {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .navbar-review {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .review-list {
+        flex-wrap: wrap;
+    }
+
+    .review-card {
+        flex: 1 1 calc(50% - 10px);
+    }
+
+    .review-box-index {
+        margin: 25px 15px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .review-button {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-review {
+        padding: 12px;
+    }
+
+    .warna-logo {
+        font-size: 24px;
+    }
+
+    .navbar-review a {
+        font-size: 12px;
+    }
+
+    .review-container {
+        margin: 25px auto;
+        padding: 0 10px;
+    }
+
+    .review-header h1 {
+        font-size: 24px;
+    }
+
+    .review-form,
+    .review-section {
+        padding: 18px;
+    }
+
+    .review-list {
+        flex-direction: column;
+    }
+
+    .review-card {
+        width: 100%;
+        flex: none;
+    }
+
+    .review-box-index {
+        margin: 20px 10px;
+        padding: 18px;
+    }
+
+    .review-box-index h2 {
+        font-size: 20px;
+    }
+
+    .review-box-index p {
+        font-size: 13px;
+    }
+}
