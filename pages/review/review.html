@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ulasan Pengguna</title>
+</head>
+<body>
+    <header>
+        <a href="../../index.html">Tiketku</a>
+        <nav>
+            <a href="../../index.html">Beranda</a>
+            <a href="../tiket/dashboard.html">Tiket</a>
+            <a href="../booking/hotel.html">Hotel</a>
+            <a href="../explore/explore.html">Explore</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Ulasan Pengguna</h1>
+        <p>Bagikan pengalaman kamu menggunakan Tiketku.</p>
+
+        <section>
+            <h2>Tulis Ulasan</h2>
+
+            <label>Nama</label>
+            <input type="text" id="nama" placeholder="Masukkan nama">
+
+            <label>Rating</label>
+            <select id="rating">
+                <option value="5">★★★★★</option>
+                <option value="4">★★★★☆</option>
+                <option value="3">★★★☆☆</option>
+                <option value="2">★★☆☆☆</option>
+                <option value="1">★☆☆☆☆</option>
+            </select>
+
+            <label>Ulasan</label>
+            <textarea id="ulasan" placeholder="Tulis ulasan kamu"></textarea>
+
+            <button id="btnKirim">Kirim Ulasan</button>
+        </section>
+
+        <section>
+            <h2>Ulasan Terbaru</h2>
+
+            <div>
+                <p>★★★★★</p>
+                <p>"Proses pesan tiketnya gampang dan cepat."</p>
+                <h4>jon</h4>
+            </div>
+
+            <div>
+                <p>★★★★★</p>
+                <p>"Hotel sesuai dengan informasi yang ditampilkan."</p>
+                <h4>cris</h4>
+            </div>
+
+            <div>
+                <p>★★★★☆</p>
+                <p>"Pembayarannya mudah dan prosesnya cepat."</p>
+                <h4>Budi</h4>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
