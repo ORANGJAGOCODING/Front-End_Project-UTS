@@ -139,3 +139,101 @@
 .toast.error {
     background-color: #ef4444;
 }
+
+@media (max-width: 1024px) {
+    .kontainer-logo {
+        max-width: 420px;
+    }
+
+    .kotak-login {
+        padding: 32px 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .halaman-login {
+        padding: 16px;
+    }
+
+    .kontainer-logo {
+        max-width: 380px;
+    }
+
+    .warna-logo {
+        font-size: 32px;
+    }
+
+    .kotak-login {
+        padding: 30px 24px;
+        border-radius: 14px;
+    }
+
+    .grup-form input {
+        padding: 11px 12px;
+        font-size: 14px;
+    }
+
+    .tombol-masuk {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .toast {
+        top: 15px;
+        right: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .halaman-login {
+        padding: 12px;
+    }
+
+    .kontainer-logo {
+        max-width: 100%;
+    }
+
+    .warna-logo {
+        font-size: 28px;
+    }
+
+    .kotak-login {
+        padding: 24px 18px;
+        border-radius: 12px;
+    }
+
+    .grup-form {
+        margin-bottom: 16px;
+    }
+
+    .grup-form label {
+        font-size: 12px;
+    }
+
+    .grup-form input {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+
+    .tombol-masuk {
+        padding: 11px;
+        font-size: 14px;
+    }
+
+    .teks-bwh {
+        font-size: 11px;
+        margin-top: 20px;
+    }
+
+    .password-box button {
+        right: 8px;
+        font-size: 15px;
+    }
+
+    .toast {
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        text-align: center;
+    }
+}
