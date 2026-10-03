@@ -1,3 +1,15 @@
+    const isLogin = localStorage.getItem("isLogin");
+    const user = localStorage.getItem("user");
+    const namaUser = document.getElementById("namaUser");
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    if (isLogin === "true" && user) {
+        const users = JSON.parse(user);
+        namaUser.textContent = users.username;
+    }
+});
+
 function salinKode(idElement, tombol) {
     const code = document.getElementById(idElement).innerText;
 
@@ -18,12 +30,10 @@ function salinKode(idElement, tombol) {
 
 document.getElementById('linkPaketHome').addEventListener('click', (event) => {
     event.preventDefault();
-
     const destinasiPaket = localStorage.getItem('destinasiPaket');
-
     if (destinasiPaket) {
-      window.location.href = 'pages/paket/paket.html';
+        window.location.href = 'pages/paket/paket.html';
     } else {
-      window.location.href = 'pages/paket/explore.html';
+        window.location.href = 'pages/paket/explore.html';
     }
   });
