@@ -2,6 +2,10 @@ h3, h5 {
     font-weight: lighter;
 }
 
+:root {
+    --text-color: #334155;
+}
+
 .container {
   display: grid;
   grid-template-columns: 280px 1fr;
