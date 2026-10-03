@@ -253,3 +253,87 @@ body {
 .paket-button:hover {
     opacity: 0.9;
 }
+
+@media (max-width: 900px) {
+    .search-box {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn-cari {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .paket-card {
+        height: auto;
+    }
+
+    .paket-image {
+        width: 35%;
+        height: auto;
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 700px) {
+    .paket-card {
+        flex-direction: column;
+    }
+
+    .paket-image {
+        width: 100%;
+        min-width: unset;
+        height: 250px;
+    }
+
+    .paket-heading h3 {
+        font-size: 1.4rem;
+    }
+
+    .paket-harga h2 {
+        font-size: 1.75rem;
+    }
+
+    .paket-button {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .page-wrapper {
+        padding: 16px 12px 40px;
+    }
+
+    .search-box {
+        padding: 12px;
+    }
+
+    .search-item {
+        padding: 0;
+    }
+
+    .search-container h1 {
+        font-size: 18px;
+    }
+
+    .paket-info {
+        padding: 15px;
+    }
+
+    .paket-heading {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .paket-bottom {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .paket-button {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+}

@@ -54,3 +54,10 @@ document.getElementById('linkPaket').addEventListener('click', (event) => {
       window.location.href = '../paket/explore.html';
     }
   });
+
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+  menuIcon.onclick = () => {
+    navbar.classList.toggle('active');
+};

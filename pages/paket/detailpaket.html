@@ -8,292 +8,293 @@
     <link rel="stylesheet" href="../../asset/css/detailpaket.css">
 </head>
 <body>
-<header class="header">
-    <div class="kontainer-logo">
+    <header class="header">
+        <div class="kontainer-logo">
+            <a href="../../index.html" class="warna-logo">Tiket<span>ku</span></a>
+        </div>
+        <nav class="navbar">
+            <a href="#" id="linkPaket" class="active">Paket</a>
+            <a href="../tiket/dashboard.html">Tiket Pesawat</a>
+            <a href="../booking/hotel.html">Hotel</a>
+            <a href="#">Jadwal</a>
+            <a href="../history/history.html">Cek Pesanan</a>
+            <a href="../favorite/favorite.html">Favorite</a>
+            <a href="#">Bantuan</a>
+        </nav>
+        <div class="akun">
+            <button class="inbox" id="menu-icon">☰</button>
+            <a href="../inbox/notifikasi.html" class="inbox" id="inbox">&#9993;</a>
+            <button class="profil" id="profil" aria-label="Menu">&#128100;</button>
+            <div class="profilDropdown" id="profilDropdown">
+                <ul class="menu-list">
+                    <li><a href="../profil/profil.html">Profil</a></li>
+                    <li><a href="../favorite/favorite.html">Favorite</a></li>
+                    <li><a href="#" id="logout" class="logout">Keluar (Logout)</a></li>
+                </ul>
+            </div>
+            <a href="../auth/login.html" class="login" id="login">Masuk</a>
+            <a href="../auth/daftar.html" class="daftar" id="daftar">Daftar</a>
+        </div>
+    </header>
+    <main class="page-wrapper">
+        <section class="gallery-container">
+            <div class="gallery-main">
+                <img src="../../asset/images/paket_relax.jpeg">
+            </div>
+            <div class="gallery-side">
+                <div class="gallery-item">
+                    <img src="../../asset/images/gunungkidul.jpeg">
+                </div>
+                <div class="gallery-item">
+                    <img src="../../asset/images/paket_luxury.jpeg">
+                </div>
+            </div>
+        </section>
+        <section class="paket-main-header">
+            <div class="paket-headline-left">
+                <h1 class="paket-headline-title">Relaxing Break to <span class="labelDestinasi"></span></h1>
+                <div class="paket-headline-rating">
+                    <span class="rating-score">4.7/5</span>
+                    <span>(245 ulasan)</span>
+                </div>
+                <div class="paket-specs-strip">
+                    <span class="spec-pill">4 Hari 3 Malam</span>
+                    <span class="spec-pill">Penerbangan Pulang Pergi</span>
+                    <span class="spec-pill">Hotel 4 Bintang</span>
+                    <span class="spec-pill">Sarapan Termasuk</span>
+                </div>
+            </div>
+            <aside class="paket-price-card">
+                <div class="price-calculation">
+                    <div class="main-price-val">
+                        <span>Rp. 5.499.000 / orang</span>
+                    </div>
+                    <span class="price-tax-note">Termasuk pajak & seluruh biaya layanan</span>
+                </div>
+                <button type="button" class="btn-select-paket" id="btnProceedPayment">Pesan Sekarang</button>
+            </aside>
+        </section>
+        <section class="paket-section">
+            <div class="section-title-wrapper">
+                <div>
+                    <h2>Penerbangan (Semua waktu yang tertera adalah waktu lokal di tempat)</h2>
+                </div>
+            </div>
+            <article class="flight-paket-card">
+                <div class="flight-paket-header">
+                    <div class="airline-info">
+                        <div class="airline-code-badge">GA</div>
+                        <div class="airline-text">
+                            <span class="airline-name">Garuda Indonesia</span>
+                            <span class="flight-code">Boeing 737-800</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flight-leg">
+                    <div class="flight-leg-title">
+                        <span>Penerbangan Pergi</span>
+                        <span>Senin, 12 Oktober 2026</span>
+                    </div>
+                    <div class="destination">
+                        <div class="dest origin">
+                            <div class="hour">08:00</div>
+                            <div class="labelAsal"></div>
+                        </div>
+                        <div class="flight-duration-center">
+                            <span class="duration-text">2j 50m</span>
+                            <div class="flight-line-track">
+                                <span class="flight-line-dot start"></span>
+                                <div class="flight-plane-icon">
+                                    <img src="../../asset/images/plane-track.svg" alt="Pesawat" width="16" height="16">
+                                </div>
+                                <span class="flight-line-dot end"></span>
+                            </div>
+                            <span class="flight-type-badge">Langsung</span>
+                        </div>
+                        <div class="dest destination-point">
+                            <div class="hour">10:50</div>
+                            <div class="labelDestinasi"></div>
+                        </div>
+                    </div>
+                    <div class="flight-meta">
+                        <span>GA-412</span>
+                        <span>Bagasi 20 Kg</span>
+                        <span>Premium Ekonomi</span>
+                    </div>
+                </div>
+                <div class="flight-divider"></div>
+                <div class="flight-leg">
+                    <div class="flight-leg-title">
+                        <span>Penerbangan Pulang</span>
+                        <span>Kamis, 15 Oktober 2026</span>
+                    </div>
+                    <div class="destination">
+                        <div class="dest origin">
+                            <div class="hour">16:00</div>
+                            <div class="labelDestinasi"></div>
+                        </div>
+                        <div class="flight-duration-center">
+                            <span class="duration-text">2j 55m</span>
+                            <div class="flight-line-track">
+                                <span class="flight-line-dot start"></span>
+                                <div class="flight-plane-icon">
+                                    <img src="../../asset/images/plane-track.svg" alt="Pesawat" width="16" height="16">
+                                </div>
+                                <span class="flight-line-dot end"></span>
+                            </div>
+                            <span class="flight-type-badge">Langsung</span>
+                        </div>
+                        <div class="dest destination-point">
+                            <div class="hour">18:55</div>
+                            <div class="labelAsal"></div>
+                        </div>
+                    </div>
+                    <div class="flight-meta">
+                        <span>GA-413</span>
+                        <span>Bagasi 20 Kg</span>
+                        <span>Premium Ekonomi</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="paket-section">
+            <div class="section-title-wrapper">
+                <div>
+                    <h2>Akomodasi</h2>
+                </div>
+            </div>
+            <article class="hotel-paket-card">
+                <img class="hotel-paket-image"src="../../asset/images/paket_luxury.jpeg">
+                <div class="hotel-paket-info">
+                    <span class="hotel-type">
+                        Hotel Bintang 4
+                    </span>
+                    <div class="hotel-title">
+                        <h3>Grand <span class="labelDestinasi"></span> Hotel and Resort</h3>
+                    </div>
+                    <div class="hotel-rating">
+                        <strong>4.9/5</strong>
+                        <span>(877 ulasan)</span>
+                    </div>
+                    <div class="facilities">
+                        <span>WiFi Gratis</span>
+                        <span>Kolam Renang</span>
+                        <span>Restoran</span>
+                        <span>Spa</span>
+                    </div>
+                </div>
+                <div class="hotel-stay">
+                    <span class="stay-label">Kamar</span>
+                    <strong>Deluxe Room</strong>
+                    <span>3 malam</span>
+                </div>
+            </article>
+        </section>
+        <section class="paket-section">
+            <div class="section-title-wrapper">
+                <div>
+                    <h2>Fasilitas dan Layanan</h2>
+                </div>
+            </div>
+            <div class="included-grid">
+                <div class="included-card">
+                    <div>
+                        <strong>Tiket Pesawat</strong>
+                        <p>Pulang pergi tanpa transfer</p>
+                    </div>
+                </div>
+                <div class="included-card">
+                    <div>
+                        <strong>Hotel 4 Bintang</strong>
+                        <p>3 malam Deluxe Room</p>
+                    </div>
+                </div>
+                <div class="included-card">
+                    <div>
+                        <strong>Sarapan</strong>
+                        <p>Setiap pagi selama menginap</p>
+                    </div>
+                </div>
+                <div class="included-card">
+                    <div>
+                        <strong>Spa Service</strong>
+                        <p>Fasilitas Spa 2x di Hotel per Orang</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="paket-section">
+            <div class="section-title-wrapper">
+                <div>
+                    <h2>Kebijakan Paket</h2>
+                </div>
+            </div>
+            <div class="policy-grid">
+                <div class="policy-card">
+                    <h4>Pembatalan</h4>
+                    <p>Pembatalan gratis hingga 48 jamsebelum keberangkatan.</p>
+                </div>
+                <div class="policy-card">
+                    <h4>Bagasi</h4>
+                    <p>Bagasi tercatat maksimal 20 Kg per penumpang.</p>
+                </div>
+                <div class="policy-card">
+                    <h4>Check-in Hotel</h4>
+                    <p>Check-in mulai pukul 14:00 dan check-out pukul 12:00 (Waktu Lokal).</p>
+                </div>
+            </div>
+        </section>
+        <div class="modal-backdrop" id="checkoutModal" aria-hidden="true">
+            <div class="modal-box">
+                <div class="modal-icon-success">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                </div>
+                <h3 class="modal-title">Konfirmasi Paket</h3>
+                <p class="modal-desc">Pastikan rincian paket perjalanan Anda sudah sesuai.</p>
+                <div class="modal-summary-box">
+                    <div class="modal-summary-row">
+                        <span>Paket:</span>
+                        <strong>Relaxing Break to <span class="labelDestinasi"></span></strong>
+                    </div>
+                    <div class="modal-summary-row">
+                        <span>Perjalanan:</span>
+                        <strong>12 Okt - 15 Okt 2026</strong>
+                    </div>
+                    <div class="modal-summary-row">
+                        <span>Hotel:</span>
+                        <strong>Grand <span class="labelDestinasi"></span> Hotel and Resort</strong>
+                    </div>
+                    <div class="modal-summary-row">
+                        <span>Pesawat:</span>
+                        <strong>Garuda Indonesia</strong>
+                    </div>
+                    <div class="modal-summary-row total">
+                        <span>Total Biaya:</span>
+                        <strong>Rp. 5.499.000 / orang</strong>
+                    </div>
+                </div>
+                <div class="modal-actions">
+                    <button type="button" class="btn-modal-cancel" id="btnCloseModal">Kembali</button>
+                    <button type="button" class="btn-modal-confirm" id="btnConfirmPay">Bayar Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <ul class="list">
+            <li><a href="../tiket/dashboard.html">Pesawat</a></li>
+            <li><a href="../booking/hotel.html">Hotel</a></li>
+            <li><a href="../kebijakan/kebijakan_privasi.html">Kebijakan Privasi</a></li>
+            <li><a href="../kebijakan/syarat_ketentuan.html">Syarat dan Ketentuan</a></li>
+        </ul>
         <a href="../../index.html" class="warna-logo">Tiket<span>ku</span></a>
-    </div>
-    <nav class="navbar">
-        <a href="#" id="linkPaket" class="active">Paket</a>
-        <a href="../tiket/dashboard.html">Tiket Pesawat</a>
-        <a href="../booking/hotel.html">Hotel</a>
-        <a href="#">Jadwal</a>
-        <a href="../history/history.html">Cek Pesanan</a>
-        <a href="../favorite/favorite.html">Favorite</a>
-        <a href="#">Bantuan</a>
-    </nav>
-    <div class="akun">
-        <a href="../inbox/notifikasi.html" class="inbox" id="inbox">&#9993;</a>
-        <button class="profil" id="profil" aria-label="Menu">&#128100;</button>
-        <div class="profilDropdown" id="profilDropdown">
-            <ul class="menu-list">
-                <li><a href="../profil/profil.html">Profil</a></li>
-                <li><a href="../favorite/favorite.html">Favorite</a></li>
-                <li><a href="#" id="logout" class="logout">Keluar (Logout)</a></li>
-            </ul>
-        </div>
-        <a href="../auth/login.html" class="login" id="login">Masuk</a>
-        <a href="../auth/daftar.html" class="daftar" id="daftar">Daftar</a>
-    </div>
-</header>
-<main class="page-wrapper">
-    <section class="gallery-container">
-        <div class="gallery-main">
-            <img src="../../asset/images/paket_relax.jpeg">
-        </div>
-        <div class="gallery-side">
-            <div class="gallery-item">
-                <img src="../../asset/images/gunungkidul.jpeg">
-            </div>
-            <div class="gallery-item">
-                <img src="../../asset/images/paket_luxury.jpeg">
-            </div>
-        </div>
-    </section>
-    <section class="paket-main-header">
-        <div class="paket-headline-left">
-            <h1 class="paket-headline-title">Relaxing Break to <span class="labelDestinasi"></span></h1>
-            <div class="paket-headline-rating">
-                <span class="rating-score">4.7/5</span>
-                <span>(245 ulasan)</span>
-            </div>
-            <div class="paket-specs-strip">
-                <span class="spec-pill">4 Hari 3 Malam</span>
-                <span class="spec-pill">Penerbangan Pulang Pergi</span>
-                <span class="spec-pill">Hotel 4 Bintang</span>
-                <span class="spec-pill">Sarapan Termasuk</span>
-            </div>
-        </div>
-        <aside class="paket-price-card">
-            <div class="price-calculation">
-                <div class="main-price-val">
-                    <span>Rp. 5.499.000 / orang</span>
-                </div>
-                <span class="price-tax-note">Termasuk pajak & seluruh biaya layanan</span>
-            </div>
-            <button type="button" class="btn-select-paket" id="btnProceedPayment">Pesan Sekarang</button>
-        </aside>
-    </section>
-    <section class="paket-section">
-        <div class="section-title-wrapper">
-            <div>
-                <h2>Penerbangan (Semua waktu yang tertera adalah waktu lokal di tempat)</h2>
-            </div>
-        </div>
-        <article class="flight-paket-card">
-            <div class="flight-paket-header">
-                <div class="airline-info">
-                    <div class="airline-code-badge">GA</div>
-                    <div class="airline-text">
-                        <span class="airline-name">Garuda Indonesia</span>
-                        <span class="flight-code">Boeing 737-800</span>
-                    </div>
-                </div>
-            </div>
-            <div class="flight-leg">
-                <div class="flight-leg-title">
-                    <span>Penerbangan Pergi</span>
-                    <span>Senin, 12 Oktober 2026</span>
-                </div>
-                <div class="destination">
-                    <div class="dest origin">
-                        <div class="hour">08:00</div>
-                        <div class="labelAsal"></div>
-                    </div>
-                    <div class="flight-duration-center">
-                        <span class="duration-text">2j 50m</span>
-                        <div class="flight-line-track">
-                            <span class="flight-line-dot start"></span>
-                            <div class="flight-plane-icon">
-                                <img src="../../asset/images/plane-track.svg" alt="Pesawat" width="16" height="16">
-                            </div>
-                            <span class="flight-line-dot end"></span>
-                        </div>
-                        <span class="flight-type-badge">Langsung</span>
-                    </div>
-                    <div class="dest destination-point">
-                        <div class="hour">10:50</div>
-                        <div class="labelDestinasi"></div>
-                    </div>
-                </div>
-                <div class="flight-meta">
-                    <span>GA-412</span>
-                    <span>Bagasi 20 Kg</span>
-                    <span>Premium Ekonomi</span>
-                </div>
-            </div>
-            <div class="flight-divider"></div>
-            <div class="flight-leg">
-                <div class="flight-leg-title">
-                    <span>Penerbangan Pulang</span>
-                    <span>Kamis, 15 Oktober 2026</span>
-                </div>
-                <div class="destination">
-                    <div class="dest origin">
-                        <div class="hour">16:00</div>
-                        <div class="labelDestinasi"></div>
-                    </div>
-                    <div class="flight-duration-center">
-                        <span class="duration-text">2j 55m</span>
-                        <div class="flight-line-track">
-                            <span class="flight-line-dot start"></span>
-                            <div class="flight-plane-icon">
-                                <img src="../../asset/images/plane-track.svg" alt="Pesawat" width="16" height="16">
-                            </div>
-                            <span class="flight-line-dot end"></span>
-                        </div>
-                        <span class="flight-type-badge">Langsung</span>
-                    </div>
-                    <div class="dest destination-point">
-                        <div class="hour">18:55</div>
-                        <div class="labelAsal"></div>
-                    </div>
-                </div>
-                <div class="flight-meta">
-                    <span>GA-413</span>
-                    <span>Bagasi 20 Kg</span>
-                    <span>Premium Ekonomi</span>
-                </div>
-            </div>
-        </article>
-    </section>
-    <section class="paket-section">
-        <div class="section-title-wrapper">
-            <div>
-                <h2>Akomodasi</h2>
-            </div>
-        </div>
-        <article class="hotel-paket-card">
-            <img class="hotel-paket-image"src="../../asset/images/paket_luxury.jpeg">
-            <div class="hotel-paket-info">
-                <span class="hotel-type">
-                    Hotel Bintang 4
-                </span>
-                <div class="hotel-title">
-                    <h3>Grand <span class="labelDestinasi"></span> Hotel and Resort</h3>
-                </div>
-                <div class="hotel-rating">
-                    <strong>4.9/5</strong>
-                    <span>(877 ulasan)</span>
-                </div>
-                <div class="facilities">
-                    <span>WiFi Gratis</span>
-                    <span>Kolam Renang</span>
-                    <span>Restoran</span>
-                    <span>Spa</span>
-                </div>
-            </div>
-            <div class="hotel-stay">
-                <span class="stay-label">Kamar</span>
-                <strong>Deluxe Room</strong>
-                <span>3 malam</span>
-            </div>
-        </article>
-    </section>
-    <section class="paket-section">
-        <div class="section-title-wrapper">
-            <div>
-                <h2>Fasilitas dan Layanan</h2>
-            </div>
-        </div>
-        <div class="included-grid">
-            <div class="included-card">
-                <div>
-                    <strong>Tiket Pesawat</strong>
-                    <p>Pulang pergi tanpa transfer</p>
-                </div>
-            </div>
-            <div class="included-card">
-                <div>
-                    <strong>Hotel 4 Bintang</strong>
-                    <p>3 malam Deluxe Room</p>
-                </div>
-            </div>
-            <div class="included-card">
-                <div>
-                    <strong>Sarapan</strong>
-                    <p>Setiap pagi selama menginap</p>
-                </div>
-            </div>
-            <div class="included-card">
-                <div>
-                    <strong>Spa Service</strong>
-                    <p>Fasilitas Spa 2x di Hotel per Orang</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="paket-section">
-        <div class="section-title-wrapper">
-            <div>
-                <h2>Kebijakan Paket</h2>
-            </div>
-        </div>
-        <div class="policy-grid">
-            <div class="policy-card">
-                <h4>Pembatalan</h4>
-                <p>Pembatalan gratis hingga 48 jamsebelum keberangkatan.</p>
-            </div>
-            <div class="policy-card">
-                <h4>Bagasi</h4>
-                <p>Bagasi tercatat maksimal 20 Kg per penumpang.</p>
-            </div>
-            <div class="policy-card">
-                <h4>Check-in Hotel</h4>
-                <p>Check-in mulai pukul 14:00 dan check-out pukul 12:00 (Waktu Lokal).</p>
-            </div>
-        </div>
-    </section>
-    <div class="modal-backdrop" id="checkoutModal" aria-hidden="true">
-        <div class="modal-box">
-            <div class="modal-icon-success">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-            </div>
-            <h3 class="modal-title">Konfirmasi Paket</h3>
-            <p class="modal-desc">Pastikan rincian paket perjalanan Anda sudah sesuai.</p>
-            <div class="modal-summary-box">
-                <div class="modal-summary-row">
-                    <span>Paket:</span>
-                    <strong>Relaxing Break to <span class="labelDestinasi"></span></strong>
-                </div>
-                <div class="modal-summary-row">
-                    <span>Perjalanan:</span>
-                    <strong>12 Okt - 15 Okt 2026</strong>
-                </div>
-                <div class="modal-summary-row">
-                    <span>Hotel:</span>
-                    <strong>Grand <span class="labelDestinasi"></span> Hotel and Resort</strong>
-                </div>
-                <div class="modal-summary-row">
-                    <span>Pesawat:</span>
-                    <strong>Garuda Indonesia</strong>
-                </div>
-                <div class="modal-summary-row total">
-                    <span>Total Biaya:</span>
-                    <strong>Rp. 5.499.000 / orang</strong>
-                </div>
-            </div>
-            <div class="modal-actions">
-                <button type="button" class="btn-modal-cancel" id="btnCloseModal">Kembali</button>
-                <button type="button" class="btn-modal-confirm" id="btnConfirmPay">Bayar Sekarang</button>
-            </div>
-        </div>
-    </div>
-</main>
-<footer class="footer">
-    <ul class="list">
-        <li><a href="../tiket/dashboard.html">Pesawat</a></li>
-        <li><a href="../booking/hotel.html">Hotel</a></li>
-        <li><a href="../kebijakan/kebijakan_privasi.html">Kebijakan Privasi</a></li>
-        <li><a href="../kebijakan/syarat_ketentuan.html">Syarat dan Ketentuan</a></li>
-    </ul>
-    <a href="../../index.html" class="warna-logo">Tiket<span>ku</span></a>
-    <p>Email: cs@tiketku.id</p>
-    <p>Call Center: +62 ### #### ####</p>
-    <p>&copy; 2026 Tiketku. All Rights Reserved. Project UTS Front-End Programming.</p>
-</footer>
-<script src="../../asset/js/app.js"></script>
-<script src="../../asset/js/detailpaket.js"></script>
+        <p>Email: cs@tiketku.id</p>
+        <p>Call Center: +62 ### #### ####</p>
+        <p>&copy; 2026 Tiketku. All Rights Reserved. Project UTS Front-End Programming.</p>
+    </footer>
+    <script src="../../asset/js/app.js"></script>
+    <script src="../../asset/js/detailpaket.js"></script>
 </body>
 </html>
