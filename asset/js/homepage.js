@@ -15,3 +15,15 @@ function salinKode(idElement, tombol) {
         console.error('Gagal menyalin:', err);
     });
 }
+
+document.getElementById('linkPaketHome').addEventListener('click', (event) => {
+    event.preventDefault();
+
+    const destinasiPaket = localStorage.getItem('destinasiPaket');
+
+    if (destinasiPaket) {
+      window.location.href = 'pages/paket/paket.html';
+    } else {
+      window.location.href = 'pages/paket/explore.html';
+    }
+  });

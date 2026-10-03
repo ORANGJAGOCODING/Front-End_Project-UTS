@@ -42,3 +42,15 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+document.getElementById('linkPaket').addEventListener('click', (event) => {
+    event.preventDefault();
+
+    const destinasiPaket = localStorage.getItem('destinasiPaket');
+
+    if (destinasiPaket) {
+      window.location.href = '../paket/paket.html';
+    } else {
+      window.location.href = '../paket/explore.html';
+    }
+  });
