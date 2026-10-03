@@ -4,31 +4,6 @@ body {
     line-height: 1.6;
 }
 
-/* header {
-    background-color: #ffffff;
-    width: 100%;
-    height: 60px;
-    top: 0;
-    left: 0;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-    z-index: 1000;
-}
-
-.warna-logo {
-    font-size: 24px;
-    font-weight: 800;
-    color: #0064d2;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.warna-logo span {
-    color: #fdb813;
-} */
-
 .halaman-syarat {
     max-width: 900px;
     margin: 0 auto 60px auto;
