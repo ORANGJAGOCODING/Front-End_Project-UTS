@@ -1,11 +1,11 @@
-body {
+.review-page {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f5f7fa;
     color: #1e293b;
 }
 
-.header-review {
+.review-page .header-review {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,7 +14,7 @@ body {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
-.warna-logo {
+.review-page .warna-logo {
     font-size: 28px;
     font-weight: 800;
     color: #0064d2;
@@ -22,45 +22,45 @@ body {
     letter-spacing: -1px;
 }
 
-.warna-logo span {
+.review-page .warna-logo span {
     color: #efab0c;
 }
 
-.navbar-review {
+.review-page .navbar-review {
     display: flex;
     gap: 25px;
 }
 
-.navbar-review a {
+.review-page .navbar-review a {
     color: #334155;
     text-decoration: none;
     font-size: 14px;
 }
 
-.navbar-review a:hover {
+.review-page .navbar-review a:hover {
     color: #0064d2;
 }
 
-.review-container {
+.review-page .review-container {
     max-width: 1000px;
     margin: 40px auto;
     padding: 0 20px;
 }
 
-.review-header {
+.review-page .review-header {
     text-align: center;
     margin-bottom: 30px;
 }
 
-.review-header h1 {
+.review-page .review-header h1 {
     margin-bottom: 8px;
 }
 
-.review-header p {
+.review-page .review-header p {
     color: #64748b;
 }
 
-.review-form {
+.review-page .review-form {
     background-color: white;
     padding: 25px;
     border-radius: 14px;
@@ -68,25 +68,25 @@ body {
     margin-bottom: 30px;
 }
 
-.review-form h2 {
+.review-page .review-form h2 {
     margin-top: 0;
     margin-bottom: 20px;
 }
 
-.grup-form {
+.review-page .grup-form {
     margin-bottom: 18px;
 }
 
-.grup-form label {
+.review-page .grup-form label {
     display: block;
     font-size: 13px;
     font-weight: 600;
     margin-bottom: 7px;
 }
 
-.grup-form input,
-.grup-form select,
-.grup-form textarea {
+.review-page .grup-form input,
+.review-page .grup-form select,
+.review-page .grup-form textarea {
     width: 100%;
     padding: 11px 13px;
     border: 1px solid #ced4da;
@@ -95,12 +95,12 @@ body {
     box-sizing: border-box;
 }
 
-.grup-form textarea {
+.review-page .grup-form textarea {
     min-height: 100px;
     resize: vertical;
 }
 
-.btn-kirim {
+.review-page .btn-kirim {
     width: 100%;
     padding: 12px;
     border: none;
@@ -112,29 +112,31 @@ body {
     cursor: pointer;
 }
 
-.btn-kirim:hover {
+.review-page .btn-kirim:hover {
     background-color: #0873ed;
 }
 
-.review-section {
+.review-page .review-section {
     background-color: white;
     padding: 25px;
     border-radius: 14px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
 }
 
-.review-section h2 {
+.review-page .review-section h2 {
     margin-top: 0;
     margin-bottom: 20px;
 }
 
-.review-list {
+.review-page .review-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
-.review-card {
-    flex: 1;
+.review-page .review-card {
+    flex: 1 1 calc(33.333% - 14px);
+    max-width: calc(33.333% - 14px);
     padding: 20px;
     border: 1px solid #e2e8f0;
     border-radius: 12px;
@@ -142,19 +144,19 @@ body {
     box-sizing: border-box;
 }
 
-.review-star {
+.review-page .review-star {
     color: #efab0c;
     font-size: 20px;
     margin-top: 0;
     margin-bottom: 12px;
 }
 
-.review-text {
+.review-page .review-text {
     color: #64748b;
     line-height: 1.6;
 }
 
-.review-name {
+.review-page .review-name {
     margin-bottom: 0;
     color: #1e293b;
 }
@@ -203,7 +205,7 @@ body {
 }
 
 @media (max-width: 1024px) {
-    .review-container {
+    .review-page .review-container {
         max-width: 900px;
     }
 
@@ -213,24 +215,21 @@ body {
 }
 
 @media (max-width: 768px) {
-    .header-review {
+    .review-page .header-review {
         padding: 15px 20px;
         flex-direction: column;
         gap: 12px;
     }
 
-    .navbar-review {
+    .review-page .navbar-review {
         gap: 15px;
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    .review-list {
-        flex-wrap: wrap;
-    }
-
-    .review-card {
+    .review-page .review-card {
         flex: 1 1 calc(50% - 10px);
+        max-width: calc(50% - 10px);
     }
 
     .review-box-index {
@@ -247,39 +246,36 @@ body {
 }
 
 @media (max-width: 480px) {
-    .header-review {
+    .review-page .header-review {
         padding: 12px;
     }
 
-    .warna-logo {
+    .review-page .warna-logo {
         font-size: 24px;
     }
 
-    .navbar-review a {
+    .review-page .navbar-review a {
         font-size: 12px;
     }
 
-    .review-container {
+    .review-page .review-container {
         margin: 25px auto;
         padding: 0 10px;
     }
 
-    .review-header h1 {
+    .review-page .review-header h1 {
         font-size: 24px;
     }
 
-    .review-form,
-    .review-section {
+    .review-page .review-form,
+    .review-page .review-section {
         padding: 18px;
     }
 
-    .review-list {
-        flex-direction: column;
-    }
-
-    .review-card {
+    .review-page .review-card {
         width: 100%;
-        flex: none;
+        max-width: 100%;
+        flex: 1 1 100%;
     }
 
     .review-box-index {
