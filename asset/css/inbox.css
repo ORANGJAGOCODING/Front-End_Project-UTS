@@ -214,3 +214,58 @@
 .submit:hover {
     background-color: #004fb3;
 }
+
+@media (max-width: 1024px) {
+    .container {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .sidebar {
+        width: 280px; 
+    }
+
+    .chat, .notifikasi {
+        flex: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .sidebar, .chat, .notifikasi {
+        width: 100%;
+    }
+
+    .sidebar {
+        max-height: 260px;
+        overflow-y: auto;
+    }
+
+    .chat-body, .notif-list {
+        min-height: 360px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar-items, .notif-items {
+        padding: 12px;
+    }
+
+    .chat-header, .chat-footer, .notif-header {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .chat-input {
+        font-size: 13px;
+    }
+
+    .pesan1, .pesan2 {
+        max-width: 85%;
+    }
+}

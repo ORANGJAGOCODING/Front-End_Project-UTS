@@ -83,3 +83,66 @@ section {
     border-radius: 8px;
     padding: 6px 12px;
 }
+
+@media (max-width: 1024px) {
+    .home, .promo { 
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .promo-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .home, .promo {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .home h1 {
+        font-size: 2rem;
+    }
+
+    .home h2 {
+        font-size: 1.2rem;
+    }
+
+    .promo-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .promo-items {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .home, .promo {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .home h1 {
+        font-size: 1.65rem;
+    }
+
+    .home h2 {
+        font-size: 1rem;
+    }
+
+    .promo h1 {
+        font-size: 1.4rem;
+    }
+
+    .promo-items {
+        padding: 16px;
+    }
+    
+    .claim-promo {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+}
