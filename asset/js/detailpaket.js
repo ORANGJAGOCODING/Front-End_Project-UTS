@@ -20,7 +20,7 @@ function updateDisplay() {
         element.textContent = destinasiPaket;
     })
 
-    const kotaAsalPaket = localStorage.getItem('kotaAsalPaket') || 'Singapore';
+    const kotaAsalPaket = localStorage.getItem('kotaAsalPaket') || 'Jakarta';
     document.querySelectorAll('.labelAsal').forEach(element=> {
         element.textContent = kotaAsalPaket;
     })
