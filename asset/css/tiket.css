@@ -613,7 +613,6 @@ body {
   margin-left: auto;
 }
 
-/* Flight Duration Track */
 .flight-duration-center {
   flex: 1;
   display: flex;
@@ -720,7 +719,6 @@ body {
   color: #0f172a;
 }
 
-/* Facilities Chips */
 .facilities-badges {
   display: flex;
   align-items: center;
@@ -741,7 +739,6 @@ body {
   border: 1px solid #e2e8f0;
 }
 
-/* Ticket Separator Cutout */
 .separator {
   position: relative;
   width: 0;
@@ -786,7 +783,6 @@ body {
   border: 1px solid #cbd5e1;
 }
 
-/* Ticket Stub */
 .ticket-stub {
   width: 260px;
   min-width: 260px;

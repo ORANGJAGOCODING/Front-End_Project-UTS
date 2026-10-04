@@ -231,6 +231,9 @@
 }
 
 .btn-detail {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
     font-size: 13px;
     font-weight: 600;
     padding: 8px 18px;
