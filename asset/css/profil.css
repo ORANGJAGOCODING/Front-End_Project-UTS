@@ -74,3 +74,41 @@ h3, h5 {
 .wishlist-items:hover {
     transform: translateY(-5px);
 }
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 900px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar, .mainbar {
+        width: 100%;
+    }
+
+    .wishlist {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .sidebar, .mainbar {
+        padding: 16px;
+    }
+
+    .wishlist-items {
+        flex-direction: column;
+        align-items: flex-start; gap: 8px;
+    }
+}
