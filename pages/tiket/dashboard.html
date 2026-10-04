@@ -13,13 +13,11 @@
           <a href="../../index.html" class="warna-logo">Tiket<span>ku</span></a>
         </div>
         <nav class="navbar">
-            <a href="#" id="linkPaket">Paket</a>
+            <a href="../paket/explore.html" id="Paket">Paket</a>
             <a href="../tiket/dashboard.html" class="active">Tiket Pesawat</a>
             <a href="../booking/hotel.html">Hotel</a>
-            <a href="#">Jadwal</a>
             <a href="../history/history.html">Cek Pesanan</a>
             <a href="../favorite/favorite.html">Favorite</a>
-            <a href="#">Bantuan</a>
         </nav>
         <div class="akun">
             <button class="inbox" id="menu-icon">☰</button>
@@ -27,8 +25,14 @@
             <button class="profil" id="profil" aria-label="Menu">&#128100;</button>
             <div class="profilDropdown" id="profilDropdown">
                 <ul class="menu-list">
-                    <li><a href="../profil/profil.html">Profil</a></li>
-                    <li><a href="../favorite/favorite.html">Favorite</a></li>
+                    <li><a href="#wishlist">Wishlist</a></li>
+                    <li><a href="#orders">Your Orders</a></li>
+                    <li><a href="#passengers">Simpan Data Penumpang</a></li>
+                    <li><a href="#vouchers">Voucher Box</a></li>
+                    <li><a href="#payment">Metode Pembayaran</a></li>
+                    <li><a href="#refunds">Daftar Refund</a></li>
+                    <li><a href="#reviews">My Review</a></li>
+                    <li><a href="#claim">Claim Center</a></li>
                     <li><a href="#" id="logout" class="logout">Keluar (Logout)</a></li>
                 </ul>
             </div>
@@ -763,7 +767,6 @@
             <p>&copy; 2026 Tiketku. All Rights Reserved. Project UTS Front-End Programming.</p>
         </footer>
 
-        <script src="../../asset/js/app.js"></script>
         <script>
             document.querySelectorAll('.btn-book-ticket').forEach(button => {
                 button.addEventListener('click', () => {
