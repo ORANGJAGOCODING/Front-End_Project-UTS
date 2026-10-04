@@ -17,7 +17,6 @@ body {
   padding: 24px 20px 60px;
 }
 
-/* Search bar ama selectionnya (Kotak Biru) */
 .search-section {
   background: linear-gradient(135deg, #0369a1 0%, #0f766e 100%);
   border-radius: 18px;
@@ -84,7 +83,6 @@ body {
   border-color: #d97706;
 }
 
-/* Ganti Tujuan / Asal */
 .route-selection-grid {
   display: grid;
   grid-template-columns: 1.5fr auto 1.5fr 1.2fr 1.3fr;
@@ -152,7 +150,6 @@ body {
   transform: rotate(180deg);
 }
 
-/* Searchbar */
 .searchbar {
   font-size: 14px;
   font-family: inherit;
@@ -244,7 +241,6 @@ body {
   color: #e11d48;
 }
 
-/* Date Selection Strip */
 .date-strip-wrapper {
   margin-bottom: 22px;
 }
@@ -343,7 +339,6 @@ body {
   color: #0284c7;
 }
 
-/* Toolbar & Filters */
 .toolbar {
   background: #ffffff;
   border-radius: 14px;
@@ -409,7 +404,6 @@ body {
   cursor: pointer;
 }
 
-/* Ticket Cards Container */
 .container-cards-ticket {
   display: flex;
   flex-direction: column;
@@ -437,7 +431,6 @@ body {
   border-color: #cbd5e1;
 }
 
-/* Main Ticket Content */
 .content-ticket {
   position: relative;
   flex: 1;
@@ -448,7 +441,6 @@ body {
   background: #ffffff;
 }
 
-/* Airline Header */
 .airline-header {
   display: flex;
   align-items: center;
@@ -538,7 +530,6 @@ body {
   font-weight: 600;
 }
 
-/* Content Data (Route & Details) */
 .content-data {
   display: flex;
   flex-direction: column;
@@ -700,7 +691,6 @@ body {
   border-radius: 10px;
 }
 
-/* Data Flex (Passenger & Seat Info) */
 .data-flex {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -920,7 +910,6 @@ body {
   text-align: center;
 }
 
-/* Info Guidelines */
 .info-banner {
   background: #ffffff;
   border-radius: 14px;
@@ -962,17 +951,7 @@ body {
   line-height: 1.4;
 }
 
-/* Footer */
-/* .site-footer {
-  margin-top: 50px;
-  padding-top: 20px;
-  border-top: 1px solid #e2e8f0;
-  text-align: center;
-  color: #94a3b8;
-  font-size: 13px;
-} */
 
-/* Responsive */
 @media (max-width: 992px) {
   .route-selection-grid {
     grid-template-columns: 1fr 1fr;
