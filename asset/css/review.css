@@ -1,44 +1,7 @@
 .review-page {
     margin: 0;
-    font-family: Arial, sans-serif;
     background-color: #f5f7fa;
     color: #1e293b;
-}
-
-.review-page .header-review {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 18px 50px;
-    background-color: white;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-}
-
-.review-page .warna-logo {
-    font-size: 28px;
-    font-weight: 800;
-    color: #0064d2;
-    text-decoration: none;
-    letter-spacing: -1px;
-}
-
-.review-page .warna-logo span {
-    color: #efab0c;
-}
-
-.review-page .navbar-review {
-    display: flex;
-    gap: 25px;
-}
-
-.review-page .navbar-review a {
-    color: #334155;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.review-page .navbar-review a:hover {
-    color: #0064d2;
 }
 
 .review-page .review-container {
@@ -215,18 +178,6 @@
 }
 
 @media (max-width: 768px) {
-    .review-page .header-review {
-        padding: 15px 20px;
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    .review-page .navbar-review {
-        gap: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
     .review-page .review-card {
         flex: 1 1 calc(50% - 10px);
         max-width: calc(50% - 10px);
@@ -246,18 +197,6 @@
 }
 
 @media (max-width: 480px) {
-    .review-page .header-review {
-        padding: 12px;
-    }
-
-    .review-page .warna-logo {
-        font-size: 24px;
-    }
-
-    .review-page .navbar-review a {
-        font-size: 12px;
-    }
-
     .review-page .review-container {
         margin: 25px auto;
         padding: 0 10px;
