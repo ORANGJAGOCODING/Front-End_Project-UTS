@@ -254,7 +254,6 @@
 }
 
 
-/* Responsiveness */
 @media (max-width: 1024px) {
     .search-box {
         flex-wrap: wrap;
