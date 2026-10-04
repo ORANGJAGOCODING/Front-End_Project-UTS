@@ -42,3 +42,30 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+document.getElementById('linkPaket').addEventListener('click', (event) => {
+    event.preventDefault();
+    const destinasiPaket = localStorage.getItem('destinasiPaket');
+
+    if (window.location.pathname !== '/' && window.location.pathname !== '/index.html') {
+        if (destinasiPaket) {
+        window.location.href = '../paket/paket.html';
+        } else {
+        window.location.href = '../paket/explore.html';
+        }
+    } else {
+        if (destinasiPaket) {
+        window.location.href = 'pages/paket/paket.html';
+        } else {
+        window.location.href = 'pages/paket/explore.html';
+        }
+    }
+});
+
+
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+  menuIcon.onclick = () => {
+    navbar.classList.toggle('active');
+};

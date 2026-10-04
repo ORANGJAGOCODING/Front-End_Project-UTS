@@ -1,3 +1,15 @@
+    const isLogin = localStorage.getItem("isLogin");
+    const user = localStorage.getItem("user");
+    const namaUser = document.getElementById("namaUser");
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    if (isLogin === "true" && user) {
+        const users = JSON.parse(user);
+        namaUser.textContent = users.username;
+    }
+});
+
 function salinKode(idElement, tombol) {
     const code = document.getElementById(idElement).innerText;
 

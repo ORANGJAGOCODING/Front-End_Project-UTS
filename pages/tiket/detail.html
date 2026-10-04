@@ -8,40 +8,25 @@
         <link rel="stylesheet" href="../../asset/css/detail.css">
     </head>
     <body>
-        <!DOCTYPE html>
-<html lang="id">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Daftar Tiket Penerbangan</title>
-        <link rel="stylesheet" href="../../asset/css/style.css">
-        <link rel="stylesheet" href="../../asset/css/tiket.css">
-    </head>
-    <body>
         <header class="header">
         <div class="kontainer-logo">
           <a href="../../index.html" class="warna-logo">Tiket<span>ku</span></a>
         </div>
         <nav class="navbar">
-            <a href="../paket/explore.html">Paket</a>
+            <a href="#" id="linkPaket">Paket</a>
             <a href="../tiket/dashboard.html" class="active">Tiket Pesawat</a>
             <a href="../booking/hotel.html">Hotel</a>
-            <a href="#">Jadwal</a>
             <a href="../history/history.html">Cek Pesanan</a>
+            <a href="../favorite/favorite.html">Favorite</a>
         </nav>
-        <div class="akun">
+              <div class="akun">
+            <button class="inbox" id="menu-icon">☰</button>
             <a href="../inbox/notifikasi.html" class ="inbox" id="inbox">&#9993;</a>
             <button class="profil" id="profil" aria-label="Menu">&#128100;</button>
             <div class="profilDropdown" id="profilDropdown">
                 <ul class="menu-list">
-                    <li><a href="#wishlist">Wishlist</a></li>
-                    <li><a href="#orders">Your Orders</a></li>
-                    <li><a href="#passengers">Simpan Data Penumpang</a></li>
-                    <li><a href="#vouchers">Voucher Box</a></li>
-                    <li><a href="#payment">Metode Pembayaran</a></li>
-                    <li><a href="#refunds">Daftar Refund</a></li>
-                    <li><a href="#reviews">My Review</a></li>
-                    <li><a href="#claim">Claim Center</a></li>
+                    <li><a href="../profil/profil.html">Profil</a></li>
+                    <li><a href="../favorite/favorite.html">Favorite</a></li>
                     <li><a href="#" id="logout" class="logout">Keluar (Logout)</a></li>
                 </ul>
             </div>
@@ -604,6 +589,7 @@
             <p>&copy; 2026 Tiketku. All Rights Reserved. Project UTS Front-End Programming.</p>
         </footer>
 
+        <script src="../../asset/js/app.js"></script>
         <script src="../../asset/js/detail.js"></script>
     </body>
 </html>

@@ -153,10 +153,11 @@
 }
 
 .history-status {
-    margin-top: 6px;
-    padding: 4px 10px;
-    border-radius: 12px;
-    font-size: 11px;
+    display: inline-block;
+    margin-top: 8px;
+    padding: 6px 14px;
+    border-radius: 14px;
+    font-size: 12px;
     font-weight: 700;
 }
 
@@ -183,15 +184,12 @@
     font-size: 13px;
     font-weight: 700;
     border: none;
-    border-radius: 8px;
+    border-radius: 16px;
     cursor: pointer;
     transition: all 0.2s ease;
     box-shadow: 0 2px 6px rgba(2, 132, 199, 0.2);
 }
 
-.btn-history:hover {
-    background: #0369a1;
-}
 
 /* Flight History */
 .flight-history {
@@ -367,10 +365,11 @@
 }
 
 .flight-status {
-    margin-top: 6px;
-    padding: 4px 10px;
-    border-radius: 12px;
-    font-size: 11px;
+    display: inline-block;
+    margin-top: 8px;
+    padding: 6px 14px;
+    border-radius: 14px;
+    font-size: 12px;
     font-weight: 700;
 }
 
@@ -407,10 +406,27 @@
     background: #0369a1;
 }
 
-/* Responsiveness */
-@media (max-width: 860px) {
+@media (max-width: 1024px) {
+    .history-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .history-header,
+    .flight-history-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .sort-history {
+        width: 100%;
+    }
+
     .history-card {
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: stretch;
     }
 
     .history-image {
@@ -422,31 +438,22 @@
         width: 100%;
     }
 
-    .history-detail {
-        grid-template-columns: repeat(2, 1fr);
-        width: 100%;
-    }
-
     .history-price {
         width: 100%;
         border-left: none;
-        border-top: 1px solid rgba(255, 255, 255, 0.25);
+        border-top: 1px solid #e2e8f0;
         padding-left: 0;
         padding-top: 12px;
         align-items: flex-start;
     }
 
-    .btn-history {
-        width: 100%;
-        text-align: center;
-    }
-
     .flight-history-card {
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .flight-history-info {
-        width: calc(100% - 60px);
+        width: 100%;
     }
 
     .flight-history-price {
@@ -457,35 +464,31 @@
         padding-top: 12px;
         align-items: flex-start;
     }
-
-    .btn-history-flight {
-        width: 100%;
-        text-align: center;
-    }
 }
 
-@media (max-width: 550px) {
-    .history-header,
-    .flight-history-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
+@media (max-width: 480px) {
+    .history-section {
+        padding-left: 0;
+        padding-right: 0;
     }
 
-    .flight-history-card {
-        flex-direction: column;
-        align-items: flex-start;
+    .history-header h1 {
+        font-size: 24px;
     }
 
-    .flight-history-info {
-        width: 100%;
+    .history-detail {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
     }
 
     .flight-route-history {
+        flex-direction: column;
+        align-items: flex-start;
         gap: 10px;
     }
 
     .flight-line-history {
-        font-size: 10px;
+        display: none;
     }
 }

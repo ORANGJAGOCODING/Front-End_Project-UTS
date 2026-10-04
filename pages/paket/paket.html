@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilih Paket - Tiketku</title>
+    <link rel="stylesheet" href="../../asset/css/style.css">
+    <link rel="stylesheet" href="../../asset/css/paket.css"> 
+</head>
+<body>
+    <header class="header">
+        <div class="kontainer-logo">
+            <a href="../../index.html" class="warna-logo">Tiket<span>ku</span></a>
+        </div>
+        <nav class="navbar">
+            <a href="#" id="linkPaket" class="active">Paket</a>
+            <a href="../tiket/dashboard.html">Tiket Pesawat</a>
+            <a href="../booking/hotel.html">Hotel</a>
+            <a href="../history/history.html">Cek Pesanan</a>
+            <a href="../favorite/favorite.html">Favorite</a>
+        </nav>
+        <div class="akun">
+            <button class="inbox" id="menu-icon">☰</button>
+            <a href="../inbox/notifikasi.html" class ="inbox" id="inbox">&#9993;</a>
+            <button class="profil" id="profil" aria-label="Menu">&#128100;</button>
+            <div class="profilDropdown" id="profilDropdown">
+                <ul class="menu-list">
+                    <li><a href="../profil/profil.html">Profil</a></li>
+                    <li><a href="../favorite/favorite.html">Favorite</a></li>
+                    <li><a href="#" id="logout" class="logout">Keluar (Logout)</a></li>
+                </ul>
+            </div>
+            <a href="../auth/login.html" class="login" id="login">Masuk</a>
+            <a href="../auth/daftar.html" class="daftar" id="daftar">Daftar</a>
+        </div>
+    </header>
+    <main class="page-wrapper">
+        <section class="search-section">
+            <div class="search-container">
+                <h1>Rekomendasi Paket <span class="labelDestinasi"></span></h1>
+                <div class="search-box">
+                    <div class="search-item">
+                        <label>Kota Asal</label>
+                        <select id="kotaAsal">
+                            <option selected>Jakarta</option>
+                            <option>Surabaya</option>
+                            <option>Makassar</option>
+                            <option>Medan</option>
+                        </select>
+                    </div>
+                    <div class="search-item">
+                        <label>Destinasi</label>
+                        <a href="explore.html" id="kembali">Ganti Destinasi</a>
+                    </div>
+                    <div class="search-item">
+                        <label>Tanggal Pergi</label>
+                        <input type="date">
+                    </div>
+                    <button class="btn-cari" id="btnCari">Cari</button>
+                </div>
+            </div>
+            <p class="paket-section-details">Tanggal Pulang Tergantung Paket yang Dipilih</p>
+        </section>
+        <div class="paket-card">
+            <div class="paket-image">
+                <img src="../../asset/images/paket_relax.jpeg">
+                <span class="paket-badge">Recommended</span>
+            </div>
+            <div class="paket-info">
+                <div class="paket-heading">
+                    <div>
+                        <h3>Relaxing Break To <span class="labelDestinasi"></span></h3>
+                    </div>
+                    <div class="paket-rating">
+                        <p>4.7 / 5</p>
+                    </div>
+                </div>
+                <div class="paket-durasi">
+                    <p>4 Hari 3 Malam</p>
+                </div>
+                <div class="paket-section">
+                    <div class="paket-section-title">
+                        <h4>Penginapan</h4>
+                    </div>
+                    <div class="paket-section-details">
+                        <p>Grand <span class="labelDestinasi"></span> Hotel and Resort | Hotel 4 Bintang | Deluxe Room | Sarapan Termasuk</p>
+                    </div>
+                </div>
+                <div class="paket-section">
+                    <div class="paket-section-title">
+                        <h4>Penerbangan</h4>
+                    </div>
+                    <div class="paket-section-details">
+                        <p><span class="labelAsal">Jakarta</span> → <span class="labelDestinasi"></span> | Premium Ekonomi | No Transit | Pulang Pergi</p>
+                    </div>
+                </div>
+                <div class="paket-section">
+                    <div class="paket-section-title">
+                        <h4>Fitur Tambahan</h4>
+                    </div>
+                    <div class="paket-section-details">
+                        <p>Spa Service Gratis | Tiket Wisata Termasuk</p>
+                    </div>
+                </div>
+                <div class="paket-bottom">
+                    <div class="paket-harga">
+                        <h2>Rp. 5.499.999 / org</h2>
+                        <p>Termasuk Pajak</p>
+                    </div>
+                    <a href="detailpaket.html" class="paket-button">
+                        Lihat Paket
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="paket-card">
+            <div class="paket-image">
+                <img src="../../asset/images/paket_explorer.jpg">
+                <span class="paket-badge">Populer</span>
+            </div>
+            <div class="paket-info">
+                <div class="paket-heading">
+                    <div>
+                        <h3><span class="labelDestinasi"></span> Explorer</h3>
+                    </div>
+                    <div class="paket-rating">
+                        <p>4.8 / 5</p>
+                    </div>
+                </div>
+                <div class="paket-durasi">
+                    <p>3 Hari 2 Malam</p>
+                </div>
+                <div class="paket-section">
+                    <div class="paket-section-title">
+                        <h4>Penginapan</h4>
+                    </div>
+                    <div class="paket-section-details">
+                        <p>The <span class="labelDestinasi"></span> Villa | Hotel 4 Bintang | Deluxe Room | Sarapan Termasuk</p>
+                    </div>
+                </div>
+                <div class="paket-section">
+                    <div class="paket-section-title">
+                        <h4>Penerbangan</h4>
+                    </div>
+                    <div class="paket-section-details">
+                        <p><span class="labelAsal">Jakarta</span> → <span class="labelDestinasi"></span> | Premium Ekonomi | No Transit | Pulang Pergi</p>
+                    </div>
+                </div>
+                <div class="paket-section">
+                    <div class="paket-section-title">
+                        <h4>Fitur Tambahan</h4>
+                    </div>
+                    <div class="paket-section-details">
+                        <p>Hiking/Trekking | Tiket Wisata Termasuk</p>
+                    </div>
+                </div>
+                <div class="paket-bottom">
+                    <div class="paket-harga">
+                        <h2>Rp. 4.499.999 / org</h2>
+                        <p>Termasuk Pajak</p>
+                    </div>
+                    <a href="detailpaket.html" class="paket-button">
+                        Lihat Paket
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="paket-card">
+            <div class="paket-image">
+                <img src="../../asset/images/paket_luxury.jpeg">
+                <span class="paket-badge">Best</span>
+            </div>
+            <div class="paket-info">
+                <div class="paket-heading">
+                    <div>
+                        <h3>A <span class="labelDestinasi"></span> Luxury Trip</h3>
+                    </div>
+                    <div class="paket-rating">
+                        <p>4.9 / 5</p>
+                    </div>
+                </div>
+                <div class="paket-durasi">
+                    <p>6 Hari 5 Malam</p>
+                </div>
+                <div class="paket-section">
+                    <div class="paket-section-title">
+                        <h4>Penginapan</h4>
+                    </div>
+                    <div class="paket-section-details">
+                        <p>Premier <span class="labelDestinasi"></span> Hotel | Hotel 5 Bintang | Executive Suite | Sarapan &amp; Snack Termasuk</p>
+                    </div>
+                </div>
+                <div class="paket-section">
+                    <div class="paket-section-title">
+                        <h4>Penerbangan</h4>
+                    </div>
+                    <div class="paket-section-details">
+                        <p><span class="labelAsal"></span> → <span class="labelDestinasi"></span> | Bisnis | No Transit | Pulang Pergi</p>
+                    </div>
+                </div>
+                <div class="paket-section">
+                    <div class="paket-section-title">
+                        <h4>Fitur Tambahan</h4>
+                    </div>
+                    <div class="paket-section-details">
+                        <p>Private Tour Guide | Tiket Wisata Termasuk</p>
+                    </div>
+                </div>
+                <div class="paket-bottom">
+                    <div class="paket-harga">
+                        <h2>Rp. 7.499.999 / org</h2>
+                        <p>Termasuk Pajak</p>
+                    </div>
+                    <a href="detailpaket.html" class="paket-button">
+                        Lihat Paket
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <ul class="list">
+            <li><a href="../tiket/dashboard.html">Pesawat</a></li>
+            <li><a href="../booking/hotel.html">Hotel</a></li>
+            <li><a href="../kebijakan/kebijakan_privasi.html">Kebijakan Privasi</a></li>
+            <li><a href="../kebijakan/syarat_ketentuan.html">Syarat dan Ketentuan</a></li>
+        </ul>
+        <a href="../../index.html" class="warna-logo">Tiket<span>ku</span></a>
+        <p>Email: cs@tiketku.id</p>
+        <p>Call Center: +62 ### #### ####</p>
+        <p>&copy; 2026 Tiketku. All Rights Reserved. Project UTS Front-End Programming.</p>
+    </footer>
+
+    <script src="../../asset/js/app.js"></script>
+    <script src="../../asset/js/paket.js"></script>
+</body>
+</html>

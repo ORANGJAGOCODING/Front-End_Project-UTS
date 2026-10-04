@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   document.getElementById('btnConfirmPay')?.addEventListener('click', () => {
-    alert('Terima kasih! Pesanan Anda sedang diproses ke pembayaran.');
-    modal?.classList.remove('active');
+    alert('Pesanan Anda sedang diproses ke pembayaran, silakan lanjutkan ke halaman pembayaran.');
+    window.location.href = '../tiket/pembayaran.html';
   });
 });
