@@ -46,19 +46,15 @@ document.addEventListener("DOMContentLoaded", () => {
 document.getElementById('linkPaket').addEventListener('click', (event) => {
     event.preventDefault();
     const destinasiPaket = localStorage.getItem('destinasiPaket');
+    const redirect = destinasiPaket ? 'paket.html' : 'explore.html';
 
-    if (window.location.pathname !== '/' && window.location.pathname !== '/index.html') {
-        if (destinasiPaket) {
-        window.location.href = '../paket/paket.html';
-        } else {
-        window.location.href = '../paket/explore.html';
-        }
+    const path = window.location.pathname;
+    const isIndex = path.endsWith('/index.html')
+
+    if (isIndex) {
+        window.location.href = `./pages/paket/${redirect}`;
     } else {
-        if (destinasiPaket) {
-        window.location.href = 'pages/paket/paket.html';
-        } else {
-        window.location.href = 'pages/paket/explore.html';
-        }
+        window.location.href = `../paket/${redirect}`;
     }
 });
 
